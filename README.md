@@ -1,6 +1,7 @@
 # Мои туториалы и конфигурационные файлы
 
 * Туториал по подключению SFML к проекту в Visual Studio 2019 - [здесь](./SFML-VisualStudio2019/README.md)
+* Шаблон README для репозиториев - [здесь](./readme-template/README.md)
 
 
 ## :open_hands: Лицензия
