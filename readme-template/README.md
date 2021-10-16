@@ -1,4 +1,11 @@
-# Название проекта
+<h1 align="center"> Название проекта </h1>
+
+<p align="center">
+  <a href="#" target="_blank"> <img alt="license" src="https://img.shields.io/github/license/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
+  <a href="#" target="_blank"> <img alt="last release" src="https://img.shields.io/github/v/release/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909&logo="></a>
+  <a href="#" target="_blank"> <img alt="last commit" src="https://img.shields.io/github/last-commit/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
+  <a href="#" target="_blank"> <img alt="commit activity" src="https://img.shields.io/github/commit-activity/m/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
+</p>
 
 ## Навигация
 
