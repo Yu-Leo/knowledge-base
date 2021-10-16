@@ -12,7 +12,7 @@
 ## :pencil2: Разное
 
 * Шаблон README для репозиториев - [здесь](./readme-template/README.md)
-* Команды для удобной компиляции и запуска **.cpp** файлов из vim - [здесь](./vim-config/run_cpp.md)
+* Команды для удобной компиляции и запуска **.cpp** файла из vim - [здесь](./vim-config/run_cpp.md)
 
 
 ## :open_hands: Лицензия
