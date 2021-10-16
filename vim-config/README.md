@@ -33,7 +33,7 @@ vim ~/.vimrc
 
 [Официальный репозиторий](https://github.com/junegunn/vim-plug)
 
-## 3.1 Устанавливаем Vim Plug
+### 3.1 Устанавливаем Vim Plug
 
 Для Unix: 
 
@@ -45,7 +45,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 [Полная инструкция по установке](https://github.com/junegunn/vim-plug/blob/master/README.md#installation)
 
 
-## 3.2 Устанавливаем все плагины, указанные в .vimrс
+### 3.2 Устанавливаем все плагины, указанные в .vimrс
 
 В Vim: `Esc` + `:PlugInstall`
 
