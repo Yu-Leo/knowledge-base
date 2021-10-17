@@ -12,7 +12,7 @@
 ## :pencil2: Разное
 
 * Шаблон README для репозиториев - [здесь](./readme-template/README.md)
-* Скрипт для генерации исходного кода значков в README-файл - [здесь](./readme-template/badges_generator.py) ([объяснение](./readme-template/badges_generator.py))
+* Скрипт для генерации исходного кода значков в README-файл - [здесь](./readme-template/badges_generator.py) ([объяснение](./readme-template/badges_generator.md))
 * Команды для удобной компиляции и запуска **.cpp** файла из vim - [здесь](./vim-config/run_cpp.md)
 
 
