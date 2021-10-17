@@ -2,7 +2,7 @@ user_name = ""
 repo_name = ""
 
 user_name = input("Enter GitHub username: ")
-repo_name = input("Enter GitHub repossitory name: ")
+repo_name = input("Enter GitHub repository name: ")
 
 badges_raw = f"""<p align="center">
   <a href="https://github.com/{user_name}/{repo_name}/blob/main/LICENSE" target="_blank"> <img alt="license" src="https://img.shields.io/github/license/{user_name}/{repo_name}?style=for-the-badge&labelColor=090909"></a>
