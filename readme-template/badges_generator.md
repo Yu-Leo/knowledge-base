@@ -9,7 +9,7 @@
 
 
 <a id="chapter-0"></a>
-## Фай скрипта - [здесь](./badges_generator.py)
+## Файл скрипта - [здесь](./badges_generator.py)
 
 <a id="chapter-1"></a>
 ## Формат генерируемых значков
