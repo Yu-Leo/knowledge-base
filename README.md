@@ -1,5 +1,10 @@
 # Мои туториалы и конфигурационные файлы
 
+## :heavy_exclamation_mark: Дисклеймер
+Данный репозиторий создан мною в первую очередь для организации и систематизации собственных знаний и конфигов. **Может содержать ошибки и неточности!** [Issues](https://github.com/Yu-Leo/tutorials-and-config-files/issues) и [Pull requests](https://github.com/Yu-Leo/tutorials-and-config-files/pulls) приветствуются!
+
+<br> 
+
 ## :page_with_curl: Туториалы
 
 * Туториал по подключению SFML к проекту в Visual Studio 2019 - [здесь](./SFML-VisualStudio2019/README.md)
@@ -15,6 +20,7 @@
 * Скрипт для генерации исходного кода значков в README-файл - [здесь](./readme-template/badges_generator.py) ([объяснение](./readme-template/badges_generator.md))
 * Команды для удобной компиляции и запуска **.cpp** файла из vim - [здесь](./vim-config/run_cpp.md)
 
+<br> 
 
 ## :open_hands: Лицензия
 
