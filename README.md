@@ -13,6 +13,7 @@
 ## :wrench: Конфигурационные файлы
 
 * Мой конфиг **vim**-a - [здесь](./vim-config/.vimrc)
+* Мой конфиг **bash**-a - [здесь](./bash-config/.bashrc). Изначально создан в Linux Mint
 
 ## :pencil2: Разное
 
