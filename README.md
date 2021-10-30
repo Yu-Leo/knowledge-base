@@ -12,7 +12,7 @@
 
 ## :wrench: Конфигурационные файлы
 
-* Мой конфиг vim-a - [здесь](./vim-config/.vimrc)
+* Мой конфиг **vim**-a - [здесь](./vim-config/.vimrc)
 
 ## :pencil2: Разное
 
