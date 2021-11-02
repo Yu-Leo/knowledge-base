@@ -1,7 +1,7 @@
-# Мои туториалы и конфигурационные файлы
+# Моя база знаний
 
 ## :heavy_exclamation_mark: Дисклеймер
-Данный репозиторий создан мною в первую очередь для организации и систематизации собственных знаний и конфигов. **Может содержать ошибки и неточности!** [Issues](https://github.com/Yu-Leo/tutorials-and-config-files/issues) и [Pull requests](https://github.com/Yu-Leo/tutorials-and-config-files/pulls) приветствуются!
+Данный репозиторий создан мною в первую очередь для организации и систематизации собственных знаний. **Может содержать ошибки и неточности!** [Issues](https://github.com/Yu-Leo/tutorials-and-config-files/issues) и [Pull requests](https://github.com/Yu-Leo/tutorials-and-config-files/pulls) приветствуются!
 
 <br> 
 
