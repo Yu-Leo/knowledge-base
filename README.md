@@ -20,6 +20,15 @@
 * Скрипт для генерации исходного кода значков в README-файл - [здесь](./readme-template/badges_generator.py) ([объяснение](./readme-template/badges_generator.md))
 * Команды для удобной компиляции и запуска **.cpp** файла из vim - [здесь](./vim-config/run_cpp.md)
 
+## :link: Ссылки
+* Соглашение об именовании репозиториев - [здесь](https://gist.github.com/maestrow/9b97fa931d5995fe0cbfc65d13020bb0)
+* Cемантическое Версионирование 2.0.0 - [здесь](https://semver.org/lang/ru/)
+* Описание разметки файла README.md - [здесь](https://github.com/GnuriaN/format-README)
+* Emoji Cheat Sheet - [здесь](https://www.webfx.com/tools/emoji-cheat-sheet/)
+* Git Flow, GitHub Flow, GitLab Flow - [здесь](https://ru.stackoverflow.com/questions/623355/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D0%B8%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%82%D0%BE%D0%BA) 
+* Git Flow - [здесь](https://habr.com/ru/post/106912/)
+
+
 ## :open_hands: Лицензия
 
 Если данный репозиторий был полезен для Вас, поставьте звёздочку ⭐️
