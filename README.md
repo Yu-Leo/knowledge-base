@@ -1,7 +1,7 @@
 # Моя база знаний
 
 ## :heavy_exclamation_mark: Дисклеймер
-Данный репозиторий создан мною в первую очередь для организации и систематизации собственных знаний. **Может содержать ошибки и неточности!** [Issues](https://github.com/Yu-Leo/tutorials-and-config-files/issues) и [Pull requests](https://github.com/Yu-Leo/tutorials-and-config-files/pulls) приветствуются!
+Данный репозиторий создан мною в первую очередь для организации и систематизации собственных знаний. **Может содержать ошибки и неточности!** [Issues](https://github.com/Yu-Leo/knowledge-base/issues) и [Pull requests](https://github.com/Yu-Leo/knowledge-base/pulls) приветствуются!
 
 ## :page_with_curl: Туториалы
 
@@ -27,6 +27,7 @@
 * Emoji Cheat Sheet - [здесь](https://www.webfx.com/tools/emoji-cheat-sheet/)
 * Git Flow, GitHub Flow, GitLab Flow - [здесь](https://ru.stackoverflow.com/questions/623355/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D0%B8%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%82%D0%BE%D0%BA) 
 * Git Flow - [здесь](https://habr.com/ru/post/106912/)
+* "В чём разница между популярными Open Source лицензиями?" - [здесь](https://tproger.ru/articles/whats-difference-between-licenses/)
 
 
 ## :open_hands: Лицензия
