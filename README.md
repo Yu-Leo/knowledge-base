@@ -1,4 +1,10 @@
-# Моя база знаний
+# :books: Моя база знаний
+
+<br>
+
+> Свобода всегда потребует от вас знаний
+> 
+> (c) Чёрный Треугольник (YouTube)
 
 ## :heavy_exclamation_mark: Дисклеймер
 Данный репозиторий создан мною в первую очередь для организации и систематизации собственных знаний. **Может содержать ошибки и неточности!** [Issues](https://github.com/Yu-Leo/knowledge-base/issues) и [Pull requests](https://github.com/Yu-Leo/knowledge-base/pulls) приветствуются!
