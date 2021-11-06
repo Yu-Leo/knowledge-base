@@ -14,10 +14,10 @@
 <a id="chapter-1"></a>
 ## Формат генерируемых значков
 <p align="center">
-  <a href="https://github.com/Yu-Leo/tutorials-and-config-files/blob/main/LICENSE" target="_blank"> <img alt="license" src="https://img.shields.io/github/license/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
-  <a href="https://github.com/Yu-Leo/tutorials-and-config-files/releases/latest" target="_blank"> <img alt="last release" src="https://img.shields.io/github/v/release/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
-  <a href="https://github.com/Yu-Leo/tutorials-and-config-files/commits/main" target="_blank"> <img alt="last commit" src="https://img.shields.io/github/last-commit/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
-  <a href="https://github.com/Yu-Leo/tutorials-and-config-files/graphs/contributors" target="_blank"> <img alt="commit activity" src="https://img.shields.io/github/commit-activity/m/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
+  <a href="https://github.com/Yu-Leo/knowledge-base/blob/main/LICENSE" target="_blank"> <img alt="license" src="https://img.shields.io/github/license/Yu-Leo/knowledge-base?style=for-the-badge&labelColor=090909"></a>
+  <a href="https://github.com/Yu-Leo/knowledge-base/releases/latest" target="_blank"> <img alt="last release" src="https://img.shields.io/github/v/release/Yu-Leo/knowledge-base?style=for-the-badge&labelColor=090909"></a>
+  <a href="https://github.com/Yu-Leo/knowledge-base/commits/main" target="_blank"> <img alt="last commit" src="https://img.shields.io/github/last-commit/Yu-Leo/knowledge-base?style=for-the-badge&labelColor=090909"></a>
+  <a href="https://github.com/Yu-Leo/knowledge-base/graphs/contributors" target="_blank"> <img alt="commit activity" src="https://img.shields.io/github/commit-activity/m/Yu-Leo/knowledge-base?style=for-the-badge&labelColor=090909"></a>
 </p>
 
 Используются значки, генерируемые при помощи [shields.io](https://shields.io/)
@@ -28,7 +28,7 @@
 ### 1. Лицензия
 
 #### Пример:
-  <a href="https://github.com/Yu-Leo/tutorials-and-config-files/blob/main/LICENSE" target="_blank"> <img alt="license" src="https://img.shields.io/github/license/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
+  <a href="https://github.com/Yu-Leo/knowledge-base/blob/main/LICENSE" target="_blank"> <img alt="license" src="https://img.shields.io/github/license/Yu-Leo/knowledge-base?style=for-the-badge&labelColor=090909"></a>
 
 #### Ссылка:
   На файл LICENSE в ветке `main` заданного репозитория
@@ -42,7 +42,7 @@
 ### 2. Номер релиза
 
 #### Пример:
-  <a href="https://github.com/Yu-Leo/tutorials-and-config-files/releases/latest" target="_blank"> <img alt="last release" src="https://img.shields.io/github/v/release/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
+  <a href="https://github.com/Yu-Leo/knowledge-base/releases/latest" target="_blank"> <img alt="last release" src="https://img.shields.io/github/v/release/Yu-Leo/knowledge-base?style=for-the-badge&labelColor=090909"></a>
 
 #### Ссылка:
   На последний на данный момент времени релиз в репозитории
@@ -57,7 +57,7 @@
 ### 3. Время последнего коммита
 
 #### Пример:
-  <a href="https://github.com/Yu-Leo/tutorials-and-config-files/commits/main" target="_blank"> <img alt="last commit" src="https://img.shields.io/github/last-commit/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
+  <a href="https://github.com/Yu-Leo/knowledge-base/commits/main" target="_blank"> <img alt="last commit" src="https://img.shields.io/github/last-commit/Yu-Leo/knowledge-base?style=for-the-badge&labelColor=090909"></a>
 
 #### Ссылка:
   На список коммитов в ветке `main` заданного репозитория
@@ -71,7 +71,7 @@
 ### 4. Активность (коммитов в месяц)
 
 #### Пример:
-  <a href="https://github.com/Yu-Leo/tutorials-and-config-files/graphs/contributors" target="_blank"> <img alt="commit activity" src="https://img.shields.io/github/commit-activity/m/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
+  <a href="https://github.com/Yu-Leo/knowledge-base/graphs/contributors" target="_blank"> <img alt="commit activity" src="https://img.shields.io/github/commit-activity/m/Yu-Leo/knowledge-base?style=for-the-badge&labelColor=090909"></a>
 
 #### Ссылка:
   На *Insights* -> *Commits*
@@ -86,13 +86,13 @@
 ## Пример
 ```shell
 Enter GitHub username: Yu-Leo
-Enter GitHub repossitory name: tutorials-and-config-files
+Enter GitHub repossitory name: knowledge-base
 
 <p align="center">
-  <a href="https://github.com/Yu-Leo/tutorials-and-config-files/blob/main/LICENSE" target="_blank"> <img alt="license" src="https://img.shields.io/github/license/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
-  <a href="https://github.com/Yu-Leo/tutorials-and-config-files/releases/latest" target="_blank"> <img alt="last release" src="https://img.shields.io/github/v/release/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
-  <a href="https://github.com/Yu-Leo/tutorials-and-config-files/commits/main" target="_blank"> <img alt="last commit" src="https://img.shields.io/github/last-commit/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
-  <a href="https://github.com/Yu-Leo/tutorials-and-config-files/graphs/contributors" target="_blank"> <img alt="commit activity" src="https://img.shields.io/github/commit-activity/m/Yu-Leo/tutorials-and-config-files?style=for-the-badge&labelColor=090909"></a>
+  <a href="https://github.com/Yu-Leo/knowledge-base/blob/main/LICENSE" target="_blank"> <img alt="license" src="https://img.shields.io/github/license/Yu-Leo/knowledge-base?style=for-the-badge&labelColor=090909"></a>
+  <a href="https://github.com/Yu-Leo/knowledge-base/releases/latest" target="_blank"> <img alt="last release" src="https://img.shields.io/github/v/release/Yu-Leo/knowledge-base?style=for-the-badge&labelColor=090909"></a>
+  <a href="https://github.com/Yu-Leo/knowledge-base/commits/main" target="_blank"> <img alt="last commit" src="https://img.shields.io/github/last-commit/Yu-Leo/knowledge-base?style=for-the-badge&labelColor=090909"></a>
+  <a href="https://github.com/Yu-Leo/knowledge-base/graphs/contributors" target="_blank"> <img alt="commit activity" src="https://img.shields.io/github/commit-activity/m/Yu-Leo/knowledge-base?style=for-the-badge&labelColor=090909"></a>
 </p>
 ```
   
