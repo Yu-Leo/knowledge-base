@@ -5,6 +5,7 @@
 * Полезные видео про gpg: [Диджитализируй!](https://youtu.be/I2mwqC6HGGE), [Johe News](https://youtu.be/2CwsoGw2coc)
 
 * Статья на Хабре: [Используем GPG для шифрования сообщений и файлов](https://habr.com/ru/post/358182/)
+* Статья на Losst: [Шифрование файлов и папок в Linux](https://losst.ru/shifrovanie-fajlov-i-papok-v-linux) 
 
 ## :mag: Навигация
 
@@ -14,6 +15,7 @@
 * [Экспорт ключей](#chapter-3)
 * [Удаление ключей](#chapter-4)
 * [Импорт ключей](#chapter-5)
+* [Настройка gpg-agent](#chapter-6)
 
 <a id="chapter-0"></a>
 ## :page_facing_up: Краткий справочник по командам и опциям
@@ -261,3 +263,19 @@ gpg --import secret.gpg
 ```
 
 Импортируем **секретный** ключ из файла `secret.gpg`
+
+
+<a id="chapter-6"></a>
+## :wrench: Настройка gpg-agent
+
+Чтобы указать время, в течение которого можно пользоваться секретными ключами без ввода пароля редактируем файл `~/.gnupg/gpg-agent.conf`:
+
+```
+max-cache-ttl 0
+default-cache-ttl 0
+```
+
+Вместо `0` укажите время в секундах.
+
+[Источник](https://www.linux.org.ru/forum/security/13672078?cid=13672172)
+
