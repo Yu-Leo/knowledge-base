@@ -1,4 +1,10 @@
-# Моя база знаний
+# :books: Моя база знаний
+
+<br>
+
+> Свобода всегда потребует от вас знаний
+> 
+> (c) Чёрный Треугольник (YouTube)
 
 ## :heavy_exclamation_mark: Дисклеймер
 Данный репозиторий создан мною в первую очередь для организации и систематизации собственных знаний. **Может содержать ошибки и неточности!** [Issues](https://github.com/Yu-Leo/knowledge-base/issues) и [Pull requests](https://github.com/Yu-Leo/knowledge-base/pulls) приветствуются!
@@ -6,7 +12,8 @@
 ## :page_with_curl: Туториалы
 
 * Туториал по подключению SFML к проекту в Visual Studio 2019 - [здесь](./SFML-VisualStudio2019/README.md)
-* Туториал по установке и настройке vim - [здесь](./vim-config/README.md)
+* Туториал по установке и настройке **vim** - [здесь](./vim-config/README.md)
+* Туториал по использованию **gpg** - [здесь](./about-gpg/README.md)
 
 ## :wrench: Конфигурационные файлы
 
