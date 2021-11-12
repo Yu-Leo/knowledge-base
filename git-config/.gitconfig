@@ -1,0 +1,12 @@
+[user]
+	email = ''
+	name = ''
+	signingkey = 
+[credential]
+	helper = store
+[commit]
+	gpgsign = true
+[core]
+	editor = vim
+[alias]
+	graph = log --oneline --graph
