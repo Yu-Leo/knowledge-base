@@ -19,6 +19,7 @@
 
 * Мой конфиг **vim**-a - [здесь](./vim-config/.vimrc)
 * Мой конфиг **bash**-a - [здесь](./bash-config/.bashrc). Изначально создан в Linux Mint
+* Мой конфиг **git**-a - [здесь](./git-config/.gitconfig)
 * Мои настройки **PyCharm**-a - [здесь](./pycharm-config/README.md)
 
 ## :pencil2: Разное
