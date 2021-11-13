@@ -45,3 +45,16 @@ gpg --export --armor C6656513A0F9B7B7F4E76389EF39187D04795745 > ./gpg-key.pub
 На GitHub заходим в свои настройки, в раздел **"SSH and GPG keys"**, и нажимаем **"New GPG key"**.
 
 Вставляем содержимое `gpg-key.pub` в поле **"Key"** и нажимаем **"Add GPG key"**.
+
+## Возможные ошибки:
+
+### 1. "Ошибка git - gpg не смог подписать данные"
+
+Выглядит примерно так:
+```bash
+error: gpg failed to sign the data
+fatal: failed to write commit object
+```
+
+[Решение]()
+
