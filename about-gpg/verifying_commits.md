@@ -50,11 +50,11 @@ gpg --export --armor C6656513A0F9B7B7F4E76389EF39187D04795745 > ./gpg-key.pub
 
 ### 1. "Ошибка git - gpg не смог подписать данные"
 
-Выглядит примерно так:
+#### Выглядит примерно так:
 ```bash
 error: gpg failed to sign the data
 fatal: failed to write commit object
 ```
 
-[Решение]()
+#### [:point_right: Решение](gpg_failed_to_sign_the_data.md)
 
