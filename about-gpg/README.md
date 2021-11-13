@@ -16,6 +16,7 @@
 * [Удаление ключей](#chapter-4)
 * [Импорт ключей](#chapter-5)
 * [Настройка gpg-agent](#chapter-6)
+* [Использование](#chapter-7)
 
 <a id="chapter-0"></a>
 ## :page_facing_up: Краткий справочник по командам и опциям
@@ -279,3 +280,7 @@ default-cache-ttl 0
 
 [Источник](https://www.linux.org.ru/forum/security/13672078?cid=13672172)
 
+
+<a id="chapter-7"></a>
+## :earth_asia: Использование
+* Для подписи коммитов git - [мой туториал](./verifying_commits.md)

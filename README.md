@@ -13,7 +13,8 @@
 
 * Туториал по подключению SFML к проекту в Visual Studio 2019 - [здесь](./SFML-VisualStudio2019/README.md)
 * Туториал по установке и настройке **vim** - [здесь](./vim-config/README.md)
-* Туториал по использованию **gpg** - [здесь](./about-gpg/README.md)
+* Туториал по **gpg** - [здесь](./about-gpg/README.md)
+* Туториал по использованию gpg для подписи коммитов в git - [здесь](./about-gpg/verifying_commits.md)
 
 ## :wrench: Конфигурационные файлы
 
