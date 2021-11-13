@@ -29,9 +29,12 @@ mv id_ed25519.pub personal_key.pub
 
 ## 2. Настроиваем config файл
 
-Создаём и открываем `vim config`
+Создаём и открываем config файл:
+```bash
+vim config
+```
 
-Вставляем
+Вставляем в `config`
 ```
 Host github.com
     HostName github.com
