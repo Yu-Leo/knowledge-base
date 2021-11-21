@@ -24,7 +24,9 @@
 ## :wrench: Конфигурационные файлы
 
 * Мой конфиг **vim**-a - [здесь](./vim-config/.vimrc)
-* Мой конфиг **bash**-a - [здесь](./bash-config/.bashrc). Изначально создан в Linux Mint
+* Мои конфиги **bash**-a:
+  * Вариант № 1 - [здесь](./bash-config/.bashrc_1). Изначально создан в Linux Mint. **Из-за кастомизации `PS1` проявляется [ошибка с историей команд](https://www.linux.org.ru/forum/desktop/16257831)!**
+  * Вариант № 2 - [здесь](./bash-config/.bashrc_2). Ошибка с историей команд не наблюдалась
 * Мой конфиг **git**-a - [здесь](./git-config/.gitconfig)
 * Мои настройки **PyCharm**-a - [здесь](./pycharm-config/README.md)
 
