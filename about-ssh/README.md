@@ -76,3 +76,19 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'github.com' (RSA) to the list of known hosts.
 Everything up-to-date
 ```
+
+## :question: Ответы на вопросы:
+
+### Как сменить адрес удалённого репозитория:
+
+1) Первый способ: задать url репозитория, используя команду `git remote set-url origin`, например,
+  ```
+  git remote set-url origin git@github.com:Yu-Leo/knowledge-base.git
+  ```
+2) Второй способ:
+
+  Отредактировать файл **.git/config**: секция `[remote "origin"]` параметр - `url`. 
+
+Эти два способа идентичные. Т.е. вызов команды git remote set-url origin заменит содержимое git конфига.
+
+[Источник](https://jeka.by/ask/137/git-change-origin/)
