@@ -24,6 +24,8 @@ set number "Turn on string's numbers
 
 set expandtab "Replace tab's to spaces
 set tabstop=4 "Tab = 4 spaces
+set shiftwidth=4
+set smarttab
 
 "For more beautiful search
 set hlsearch
