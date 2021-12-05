@@ -32,3 +32,9 @@
 
 ![git_settings](./git_settings.jpg)
 
+
+## Tools
+## Python Integrated Tools
+
+![docstrings_format](./docstrings_format.jpg)
+
