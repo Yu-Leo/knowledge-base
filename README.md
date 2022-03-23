@@ -29,6 +29,12 @@
   * Вариант № 2 - [здесь](./bash-config/2.bashrc). Ошибка с историей команд не наблюдалась
 * Мой конфиг **git**-a - [здесь](./git-config/.gitconfig)
 * Мои настройки **PyCharm**-a - [здесь](./pycharm-config/README.md)
+* i3wm (i3-gaps)
+  * Дефолтный конфиг Manjaro i3 - [здесь](./i3-config/default_manjaro_i3_config)
+  * Мой конфиг на 23.03.22 (тестовый) - [здесь](./i3-config/my_i3_config)
+* polybar
+  * Дефолтный конфиг - [здесь](./polybar-config/default_config)
+  * Мой конфиг на 23.03.22 (тестовый) - [здесь](./polybar-config/my_config)
 
 ## :pencil2: Разное
 
