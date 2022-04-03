@@ -22,6 +22,8 @@
 * Туториал по настройке подключения к github по **ssh** - [здесь](./about-ssh/README.md)
 * Добавление поддержки кирилических символов в tty - [здесь](./linux-features/cyrillic-in-tty.md)
 * Как отключить системный звук "Бип" (beep) - [здесь](./linux-features/beep.md)
+* Как отключить lightdm - [здесь](./linux-features/lightdm.md)
+* Redshift - [здесь](./linux-features/redshift.md)
 
 ## :wrench: Конфигурационные файлы
 
