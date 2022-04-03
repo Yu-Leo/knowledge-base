@@ -5,10 +5,21 @@
 * Статья на techrocks № 2: [Как эффективно работать с несколькими SSH-ключами](https://techrocks.ru/2020/02/26/multiple-ssh-keys-managing/)
 * docs.github: [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
-
 `ssh -V` - получение номера версии
- 
-## 1. Генерируем пару ssh-ключей
+
+## :arrow_down: Добавление существующего ssh-ключа
+
+1. Создаём папку `~/.ssh`
+2. Перемещаем в неё файлы с ключами (в моём случае это `personal_key` и `personal_key.pub`
+3. Добавляем ключ: `ssh-add `~/.ssh/personal_key`
+4. При помощи `ssh-add -l` можно убедиться, что ключ добавлен
+5. Меняем права доступа к ключу: `chmod 600 ~/.ssh/personal-key`
+6. Настраиваем конфиг, как описано ниже (не уверен, что обязательно)
+
+
+## :one: Создание ключа "с нуля"
+
+### 1. Генерируем пару ssh-ключей
 
 ```bash
 ssh-keygen -t ed25519
@@ -27,7 +38,7 @@ mv id_ed25519 personal_key
 mv id_ed25519.pub personal_key.pub
 ```
 
-## 2. Настроиваем config файл
+### 2. Настроиваем config файл
 
 Создаём и открываем config файл:
 ```bash
@@ -46,7 +57,7 @@ Host github.com
 Теперь при работе с github по умолчанию будет использоваться подключение с ключом `personal_key`
 
 
-## 3. Добавляем ssh ключ в аккаунт github
+### 3. Добавляем ssh ключ в аккаунт github
 
 **"Settings"** -> **"SSH and GPG keys"** -> **"New SSH key"**
 
@@ -60,7 +71,7 @@ Host github.com
 
 ![github_add_ssh4](./github_add_ssh4.jpg)
 
-## Работа с репозиториями
+### Работа с репозиториями
 
 Теперь при клонировании репозиториев с github можно ипользовать SSH
 
