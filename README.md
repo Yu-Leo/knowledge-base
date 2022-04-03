@@ -41,6 +41,7 @@
 * Шаблон README для репозиториев - [здесь](./readme-template/README.md)
 * Скрипт для генерации исходного кода значков в README-файл - [здесь](./readme-template/badges_generator.py) ([объяснение](./readme-template/badges_generator.md))
 * Команды для удобной компиляции и запуска **.cpp** файла из vim - [здесь](./vim-config/run_cpp.md)
+* Мой формат даты и времени для трея (поставил в Manjaro Cinnamon): `%A | %d.%m.%y | %H:%M` (_Воскресенье | 03.04.22 | 21:30_)
 
 ## :link: Ссылки
 * Соглашение об именовании репозиториев - [здесь](https://gist.github.com/maestrow/9b97fa931d5995fe0cbfc65d13020bb0)
