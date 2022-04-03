@@ -23,11 +23,11 @@
 
 ## :wrench: Конфигурационные файлы
 
-* Мой конфиг **vim**-a - [здесь](./vim-config/.vimrc)
-* Мои конфиги **bash**-a:
+* Мой конфиг **vim**-a (`~/.vimrc`) - [здесь](./vim-config/.vimrc)
+* Мои конфиги **bash**-a (`~/.bashrc`):
   * Вариант № 1 - [здесь](./bash-config/1.bashrc). Изначально создан в Linux Mint. **Из-за кастомизации `PS1` проявляется [ошибка с историей команд](https://www.linux.org.ru/forum/desktop/16257831)!**
   * Вариант № 2 - [здесь](./bash-config/2.bashrc). Ошибка с историей команд не наблюдалась
-* Мой конфиг **git**-a - [здесь](./git-config/.gitconfig)
+* Мой конфиг **git**-a (`~/.gitconfig` или `~/.config/git/config`) - [здесь](./git-config/.gitconfig)
 * Мои настройки **PyCharm**-a - [здесь](./pycharm-config/README.md)
 * i3wm (i3-gaps)
   * Дефолтный конфиг Manjaro i3 - [здесь](./i3-config/default_manjaro_i3_config)
