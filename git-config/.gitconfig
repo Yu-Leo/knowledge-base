@@ -10,3 +10,5 @@
 	editor = vim
 [alias]
 	graph = log --oneline --graph
+[init]
+	defaultBranch = main
