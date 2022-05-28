@@ -11,11 +11,14 @@
 [:tv: Видео Johe News про базу знаний](https://youtu.be/9hruCcHC4FY)
 
 ## :heavy_exclamation_mark: Дисклеймер
-Данный репозиторий создан мною в первую очередь для организации и систематизации собственных знаний. **Может содержать ошибки и неточности!** [Issues](https://github.com/Yu-Leo/knowledge-base/issues) и [Pull requests](https://github.com/Yu-Leo/knowledge-base/pulls) приветствуются!
+Данный репозиторий создан мною в первую очередь для организации и систематизации собственных знаний.
+<br>
+**Может содержать ошибки и неточности!** [Issues](https://github.com/Yu-Leo/knowledge-base/issues) и [Pull requests](https://github.com/Yu-Leo/knowledge-base/pulls) приветствуются!
 
 ## :page_with_curl: Туториалы
-
 * Туториал по подключению SFML к проекту в Visual Studio 2019 - [здесь](./SFML-VisualStudio2019/README.md)
+
+### :penguin: Linux
 * Туториал по установке и настройке **vim** - [здесь](./vim-config/README.md)
 * Туториал по **gpg** - [здесь](./about-gpg/README.md)
 * Туториал по использованию gpg для подписи коммитов в git - [здесь](./about-gpg/verifying_commits.md)
@@ -25,14 +28,16 @@
 * Как отключить lightdm - [здесь](./linux-features/lightdm.md)
 * Redshift - [здесь](./linux-features/redshift.md)
 
-## :wrench: Конфигурационные файлы
 
+## :wrench: Конфигурационные файлы
+* Мой конфиг **git**-a (`~/.gitconfig` или `~/.config/git/config`) - [здесь](./git-config/.gitconfig)
+* Мои настройки **PyCharm**-a - [здесь](./pycharm-config/README.md)
+
+### :penguin: Linux
 * Мой конфиг **vim**-a (`~/.vimrc`) - [здесь](./vim-config/.vimrc)
 * Мои конфиги **bash**-a (`~/.bashrc`):
   * Вариант № 1 - [здесь](./bash-config/1.bashrc). Изначально создан в Linux Mint. **Из-за кастомизации `PS1` проявляется [ошибка с историей команд](https://www.linux.org.ru/forum/desktop/16257831)!**
   * Вариант № 2 - [здесь](./bash-config/2.bashrc). Ошибка с историей команд не наблюдалась
-* Мой конфиг **git**-a (`~/.gitconfig` или `~/.config/git/config`) - [здесь](./git-config/.gitconfig)
-* Мои настройки **PyCharm**-a - [здесь](./pycharm-config/README.md)
 * i3wm (i3-gaps)
   * Дефолтный конфиг Manjaro i3 - [здесь](./i3-config/default_manjaro_i3_config)
   * Мой конфиг на 23.03.22 (тестовый) - [здесь](./i3-config/my_i3_config)
@@ -44,6 +49,8 @@
 
 * Шаблон README для репозиториев - [здесь](./readme-template/README.md)
 * Скрипт для генерации исходного кода значков в README-файл - [здесь](./readme-template/badges_generator.py) ([объяснение](./readme-template/badges_generator.md))
+
+### :penguin: Linux
 * Команды для удобной компиляции и запуска **.cpp** файла из vim - [здесь](./vim-config/run_cpp.md)
 * Мой формат даты и времени для трея (поставил в Manjaro Cinnamon): `%A | %d.%m.%y | %H:%M` (_Воскресенье | 03.04.22 | 21:30_)
 
