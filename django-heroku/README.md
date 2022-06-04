@@ -98,11 +98,6 @@ application = WhiteNoise(application)
 pip freeze > requirements.txt
 ```
 
-Для работы Heroku в конец добавляем:
-```
-psycopg2==2.8
-```
-
 ## 7. Заливаем на Heroku
 ```bash
 git remote add heroku <url_to_heroku_git>
@@ -123,3 +118,26 @@ heroku run python manage.py migrate
 heroku run python manage.py createsuperuser
 ```
 
+## 9. Работа с переменными окружения на Heroku
+[Оцициальная документация](https://devcenter.heroku.com/articles/config-vars#setting-up-config-vars-for-a-deployed-application)
+
+### Вывод списка пеменных окружения
+```bash
+heroku config
+```
+
+### Получение значения пеменной окружения
+```bash
+heroku config:get VAR_NAME
+```
+
+### Установка значения пеменной окружения
+```bash
+heroku config:set VAR_NAME=VAR_VALUE
+```
+
+Можно использовать локальные переменные окужения, т е:
+```bash
+heroku config:set VAR_NAME=$VAR_NAME
+```
+В таком случае переменной окружения `VAR_NAME` на Heroku будет присвоено значение локальной переменной `VAR_NAME`
