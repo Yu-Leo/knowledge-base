@@ -52,7 +52,7 @@
 * Скрипт для генерации исходного кода значков в README-файл - [здесь](./readme-template/badges_generator.py) ([объяснение](./readme-template/badges_generator.md))
 
 ### :penguin: Linux
-* Команды для удобной компиляции и запуска **.cpp** файла из vim - [здесь](./vim-config/run_cpp.md)
+* Команды для компиляции / интерпретации и запуска программ из **vim** - [здесь](./vim-config/run_from_vim.md)
 * Мой формат даты и времени для трея (поставил в Manjaro Cinnamon): `%A | %d.%m.%y | %H:%M` (_Воскресенье | 03.04.22 | 21:30_)
 
 ## :link: Ссылки
