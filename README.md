@@ -56,15 +56,15 @@
 * Мой формат даты и времени для трея (поставил в Manjaro Cinnamon): `%A | %d.%m.%y | %H:%M` (_Воскресенье | 03.04.22 | 21:30_)
 
 ## :link: Ссылки
-* Соглашение об именовании репозиториев - [здесь](https://gist.github.com/maestrow/9b97fa931d5995fe0cbfc65d13020bb0)
+* Соглашение об именовании репозиториев - [github gits](https://gist.github.com/maestrow/9b97fa931d5995fe0cbfc65d13020bb0)
 * Версионирование:
-  * Cемантическое Версионирование 2.0.0 - [здесь](https://semver.org/lang/ru/)
-  * "Стадии разработки и тестирования ПО или что означает Pre-Alpha, Alpha, Beta, RC, Final" - [здесь](https://monobit.ru/stadii-razrabotki-i-testirovaniya-po-ili-chto-oznachaet-pre-alpha-alpha-beta-rc-final.html)
+  * Cемантическое Версионирование 2.0.0 - [сайт](https://semver.org/lang/ru/)
+  * "Стадии разработки и тестирования ПО или что означает Pre-Alpha, Alpha, Beta, RC, Final" - [сайт](https://monobit.ru/stadii-razrabotki-i-testirovaniya-po-ili-chto-oznachaet-pre-alpha-alpha-beta-rc-final.html)
 * Описание разметки файла README.md - [здесь](https://github.com/GnuriaN/format-README)
-* Emoji Cheat Sheet - [здесь](https://www.webfx.com/tools/emoji-cheat-sheet/)
-* Git Flow, GitHub Flow, GitLab Flow - [здесь](https://ru.stackoverflow.com/questions/623355/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D0%B8%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%82%D0%BE%D0%BA) 
-* Git Flow - [здесь](https://habr.com/ru/post/106912/)
-* "В чём разница между популярными Open Source лицензиями?" - [здесь](https://tproger.ru/articles/whats-difference-between-licenses/)
+* Emoji Cheat Sheet - [сайт](https://www.webfx.com/tools/emoji-cheat-sheet/)
+* Git Flow, GitHub Flow, GitLab Flow - [stackoverflow](https://ru.stackoverflow.com/questions/623355/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D0%B8%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D1%82%D0%BE%D0%BA) 
+* Git Flow - [статья](https://habr.com/ru/post/106912/)
+* "В чём разница между популярными Open Source лицензиями?" - [статья](https://tproger.ru/articles/whats-difference-between-licenses/)
 
 
 ## :open_hands: Лицензия
