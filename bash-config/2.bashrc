@@ -32,3 +32,16 @@ else
 fi
 unset color_prompt force_color_prompt
 
+# aliases
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias diff='colordiff'
+
+alias shutdown='sudo /sbin/shutdown'
+alias reboot='sudo /sbin/shutdown -r'
+
+alias c='clear'
+alias ll='ls -la'
