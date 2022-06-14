@@ -14,7 +14,7 @@
 
 ## Editor
 ### Font
-`Font`: **DejaVu Sans Mono**
+`Font`: **JetBrains Mono**
 
 `Size`: **16**
 
