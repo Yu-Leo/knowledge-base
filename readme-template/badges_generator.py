@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 user_name = ""
 repo_name = ""
 
