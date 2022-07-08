@@ -1,17 +1,18 @@
-# Docker и Docker Compose
+# Docker и Docker compose
 
 ## :page_facing_up: Введение
 
-**Docker** - средство упаковки, доставки и запуска приложений. Главная задача - запустить приложение. Быстрее и легче, чем ВМ. Использует ядро базовой ОС.
+**Docker** - средство упаковки, доставки и запуска приложений. Главная задача - запустить приложение. Быстрее и легче,
+чем ВМ. Использует ядро базовой ОС.
 
 **Docker image** - сборка приложения (готовая, но не запущенная)
 
-**Docker container** - работающее приложение, созданное на базе Docker image (образа). Для контейнера образ - readonly сущность.
+**Docker container** - работающее приложение, созданное на базе Docker image (образа). Для контейнера образ - readonly
+сущность.
 
 [Туториал по установке Docker на Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-ru)
 
 Реестр образов - [DockerHub](https://hub.docker.com/)
-
 
 ## :one: Пример № 1
 
@@ -42,6 +43,7 @@ CMD ["python", "app.py"]
 `FROM python:3.6` - указываем базовый образ, с которого начинаем сборку.
 
 Best practices:
+
 - Указывать точные версии образов
 - Стараться использовать `alpine` версии. `-alpine` - легковесные версии образов, основанные на Alpine Linux
 
@@ -49,7 +51,8 @@ Best practices:
 
 `WORKDIR /usr/src/app/` - указываем рабочую директорию внутри контейнера
 
-`COPY . /usr/src/app` - копируем содержимое текущей директории нашей машины в указанную 2-м аргументом директорию контейнера
+`COPY . /usr/src/app` - копируем содержимое текущей директории нашей машины в указанную 2-м аргументом директорию
+контейнера
 
 `CMD ["python", "app.py"]` - инструкции для запуска приложения при запуске контейнера
 
@@ -77,14 +80,13 @@ docker run --name hello-world hello-world
 docker run -d hello-world 
 ```
 
-**Автоудаление контейнера после завершения выполнения**
+**Автоматическое удаление контейнера после завершения выполнения**
 
 ```bash
 docker run --rm hello-world 
 ```
 
 Контейнер работает до тех пор, пока работает приложение.
-
 
 ## :two: Пример № 2
 
@@ -108,18 +110,16 @@ CMD ["python", "app.py"]
 
 `EXPOSE 8080` - "пробрасываем" порт 8080 из контейнера
 
-
 ### Запуск контейнера
-
 
 ```bash
 docker run --name hello-world --rm -p 8080:8080 hello-world
 ```
 
-`8080:8080` - порт нашей машины : порт внутри контейнера
-
+`8080:8080` - порт нашей машины: порт внутри контейнера
 
 ## :1234: Переменные окружения
+
 ### В `Dockerfile`
 
 ```dockerfile
@@ -148,7 +148,7 @@ docker run --name hello-world --rm -p 8080:8080 -e TZ=Europe/Moscow hello-world
 
 ## :mailbox: Docker volume
 
-**Docker volume** позволяет сохранить данные из контейнера (не будут удалены при остановке и удалении контейнера) 
+**Docker volume** позволяет сохранить данные из контейнера (не будут удалены после остановки и удаления контейнера)
 
 ### Список docker volume
 
@@ -170,7 +170,6 @@ docker run --name hello-world --rm -p 8080:8080 -e TZ=Europe/Moscow -v web:/usr/
 
 `web` - имя docker volume
 
-
 ## :bulb: Операции с контейнерами и образами
 
 ### Просмотр всех контейнеров (даже остановленных)
@@ -189,8 +188,7 @@ docker rm 6988fb47bc6f
 
 `6988fb47bc6f` - ID контейнера. Можно передавать не ID, а имя
 
-
-### Подробная инфа о конкретном контейнере:
+### Подробная информация о конкретном контейнере:
 
 ```bash
 docker inspect 123
@@ -246,16 +244,17 @@ docker rmi $(docker images -q)
 docker system prune
 ```
 
-
 ## :ship: Docker compose
 
-**Docker compose** - более высокоуровневый (по сравнению с Docker) инструмент, который контролирует взаимодействие контейнеров между собой
+**Docker compose** - более высокоуровневый (по сравнению с Docker) инструмент, который контролирует взаимодействие
+контейнеров между собой
 
 [Туториал по установке Docker compose на Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-ru)
 
 ### :one: Пример № 1
 
 **docker-compose.yaml**
+
 ```yaml
 version: "3"
 
@@ -268,7 +267,7 @@ services:
     restart: always
     enviroment:
       -TZ=Europe/Moscow
-  
+
   web_serivice:
     build: WebSerivice/
     restart: always
@@ -311,9 +310,11 @@ services:
       - dm_db
 ```
 
-`depends_on` - указываем списко контейнеров, которые должны быть предварительно запущены (В данном случае сначала будет запущен `dm_db`, а затем `dm_web`)
+`depends_on` - указываем список контейнеров, которые должны быть предварительно запущены (В данном случае сначала будет
+запущен `dm_db`, а затем `dm_web`)
 
-`ports` нужно указывать только для того, чтобы иметь доступ снаружи. Если нужен доступ внутри одной сети docker-compose, `ports` можно не указывать
+`ports` нужно указывать только для того, чтобы иметь доступ снаружи. Если нужен доступ внутри одной сети
+docker-compose, `ports` можно не указывать
 
 ### :three: Пример № 3
 
@@ -338,9 +339,10 @@ services:
 
 ### :four: Пример № 4
 
-docker-compose создаёт общую для сервисов сеть
+Docker compose создаёт общую для сервисов сеть
 
-Можно четко описать сети в `docker-compose.yaml`. Так же можно для каждого сервиса описать, должен ли он быть подключен к какой-то сети и если да, то к какой (по умолчанию все подключены к дефолтной).
+Можно четко описать сети в `docker-compose.yaml`. Так же можно для каждого сервиса описать, должен ли он быть подключен
+к какой-то сети и если да, то к какой (по умолчанию все подключены к дефолтной).
 
 **docker-compose.yaml**
 
@@ -364,7 +366,8 @@ networks:
     driver: bridge
 ```
 
-Сети не привязаны к проектам. Best practice - "неймспейсить" сети названиями проектов (имя сети: `имя-проекта-network` либо `имя-проекта-имя-сети`).
+Сети не привязаны к проектам. Best practice - "неймспейсить" сети названиями проектов (имя сети: `имя-проекта-network`
+либо `имя-проекта-имя-сети`).
 
 ### :bulb: Операции docker-compose
 
@@ -401,6 +404,7 @@ docker exec -it realworld-docker-api echo "foo"
 ```
 
 Запуск shell:
+
 ```bash
 docker exec -it realworld-docker-api sh
 ```
@@ -411,12 +415,14 @@ docker exec -it realworld-docker-api sh
 docker-compose -f docker-compose.yaml -f docker-compose.dev.yaml up --build
 ```
 
-В данном случае в `docker-compose.dev.yaml` достаточно переопределить лишь необходимые поля (а не все из `docker-compose.yaml`).
+В данном случае в `docker-compose.dev.yaml` достаточно переопределить лишь необходимые поля (а не все
+из `docker-compose.yaml`).
 
-Все настройки указываются в `docker-compose.yaml` (конфигурация для продакшена). Для режима разработки необходимые настройки переопределяются в `docker-compose.dev.yaml`
-
+Все настройки указываются в `docker-compose.yaml` (конфигурация для продакшена). Для режима разработки необходимые
+настройки переопределяются в `docker-compose.dev.yaml`
 
 ## :link: Источники
+
 - [docker и docker compose деплой проекта с нуля](https://www.youtube.com/playlist?list=PLmC7X4gkQWCe5yNW8h4q543WUiBCM6Odj)
 - [Основы Docker. Большой практический выпуск](https://youtu.be/QF4ZF857m44)
 - [Django + Docker](https://www.youtube.com/playlist?list=PLF-NY6ldwAWrTEtHA8zhIVeNIzXjmS8Vu)
