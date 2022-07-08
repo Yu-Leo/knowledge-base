@@ -4,11 +4,11 @@
 
 > Свобода всегда потребует от вас знаний
 > 
-> (c) Чёрный Треугольник (YouTube)
+> (c) [Чёрный Треугольник](https://www.youtube.com/c/%D0%A7%D1%91%D1%80%D0%BD%D1%8B%D0%B9%D0%A2%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA)
 > 
 <br>
 
-[:tv: Видео Johe News про базу знаний](https://youtu.be/9hruCcHC4FY)
+[:tv: Видео про базу знаний ("Johe News")](https://youtu.be/9hruCcHC4FY)
 
 ## :heavy_exclamation_mark: Дисклеймер
 Данный репозиторий создан мною в первую очередь для организации и систематизации собственных знаний.
@@ -30,7 +30,7 @@
 * Redshift - [здесь](./linux-features/redshift.md)
 
 ## :bookmark_tabs: Конспекты
-* Docker и Docker Compose - [здесь](./docker/README.md)
+* Docker и Docker compose - [здесь](./docker/README.md)
 
 ## :wrench: Конфигурационные файлы
 * Мой конфиг **git**-a (`~/.gitconfig` или `~/.config/git/config`) - [здесь](./git-config/.gitconfig)
