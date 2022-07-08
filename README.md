@@ -4,18 +4,18 @@
 
 > Свобода всегда потребует от вас знаний
 > 
-> (c) Чёрный Треугольник (YouTube)
+> (c) [Чёрный Треугольник](https://www.youtube.com/c/%D0%A7%D1%91%D1%80%D0%BD%D1%8B%D0%B9%D0%A2%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA)
 > 
 <br>
 
-[:tv: Видео Johe News про базу знаний](https://youtu.be/9hruCcHC4FY)
+[:tv: Видео про базу знаний ("Johe News")](https://youtu.be/9hruCcHC4FY)
 
 ## :heavy_exclamation_mark: Дисклеймер
 Данный репозиторий создан мною в первую очередь для организации и систематизации собственных знаний.
 <br>
-**Может содержать ошибки и неточности!** [Issues](https://github.com/Yu-Leo/knowledge-base/issues) и [Pull requests](https://github.com/Yu-Leo/knowledge-base/pulls) приветствуются!
+**Может содержать ошибки и неточности!** [Issues](https://github.com/Yu-Leo/knowledge-base/issues) с замечаниями и [Pull requests](https://github.com/Yu-Leo/knowledge-base/pulls) с исправлениями ошибок приветствуются!
 
-## :page_with_curl: Туториалы
+## :page_facing_up: Туториалы
 * Туториал по подключению SFML к проекту в Visual Studio 2019 - [здесь](./SFML-VisualStudio2019/README.md)
 * Туториал по деплою Django проекта на Heroku - [здесь](./django-heroku/README.md)
 
@@ -29,6 +29,8 @@
 * Как отключить lightdm - [здесь](./linux-features/lightdm.md)
 * Redshift - [здесь](./linux-features/redshift.md)
 
+## :bookmark_tabs: Конспекты
+* Docker и Docker compose - [здесь](./docker/README.md)
 
 ## :wrench: Конфигурационные файлы
 * Мой конфиг **git**-a (`~/.gitconfig` или `~/.config/git/config`) - [здесь](./git-config/.gitconfig)
