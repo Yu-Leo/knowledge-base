@@ -8,7 +8,7 @@
 
 **Docker container** - работающее приложение, созданное на базе Docker image (образа). Для контейнера образ - readonly сущность.
 
-[Статья про установку Docker на Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-ru)
+[Туториал по установке Docker на Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-ru)
 
 Реестр образов - [DockerHub](https://hub.docker.com/)
 
@@ -25,7 +25,7 @@ docker build -t hello-world .
 
 `.` - собрать из текущей директории
 
-Dockerfile нужен для того, чтобы сообщить докеру каким образом нужно  собирать и запускать приложение
+Dockerfile нужен для того, чтобы сообщить Docker, каким образом нужно собирать и запускать приложение
 
 **Dockerfile**
 
@@ -54,7 +54,6 @@ Best practices:
 `CMD ["python", "app.py"]` - инструкции для запуска приложения при запуске контейнера
 
 Комментарии в `Dockerfile` начинаются с # (как в Python)
-
 
 ### Запуск контейнера
 
@@ -121,7 +120,7 @@ docker run --name hello-world --rm -p 8080:8080 hello-world
 
 
 ## :1234: Переменные окружения
-#### В `Dockerfile`
+### В `Dockerfile`
 
 ```dockerfile
 FROM python:3.10
@@ -141,7 +140,7 @@ CMD ["python", "app.py"]
 
 `ENV TZ Europe/Moscow` - задаём переменные окружения
 
-#### При запуске
+### При запуске
 
 ```bash
 docker run --name hello-world --rm -p 8080:8080 -e TZ=Europe/Moscow hello-world
@@ -151,19 +150,19 @@ docker run --name hello-world --rm -p 8080:8080 -e TZ=Europe/Moscow hello-world
 
 **Docker volume** позволяет сохранить данные из контейнера (не будут удалены при остановке и удалении контейнера) 
 
-**Список docker volume**
+### Список docker volume
 
 ```bash
 docker volume ls
 ```
 
-**Создание**
+### Создание
 
 ```bash
 docker volume create web
 ```
 
-**Запуск с docker volume**
+### Запуск контейнера с docker volume
 
 ```bash
 docker run --name hello-world --rm -p 8080:8080 -e TZ=Europe/Moscow -v web:/usr/src/app/resources hello-world
@@ -197,7 +196,7 @@ docker rm 6988fb47bc6f
 docker inspect 123
 ```
 
-`123` - id контейнера. Можно указывать имя
+`123` - ID контейнера. Можно передавать не ID, а имя
 
 ### Получение только ID всех контейнеров (в том числе остановленных)
 
@@ -217,11 +216,15 @@ docker rm $(docker ps -a -q)
 docker stop 9186e9bd75d4
 ```
 
+`9186e9bd75d4` - ID контейнера. Можно передавать не ID, а имя
+
 ### Просмотр логов контейнера
 
 ```bash
-docker logs <название контейнера>
+docker logs 9186e9bd75d4
 ```
+
+`9186e9bd75d4` - ID контейнера. Можно передавать не ID, а имя
 
 ### Удаление образа
 
@@ -229,7 +232,7 @@ docker logs <название контейнера>
 docker rmi 32529af72583
 ```
 
-`32529af72583` - ID образа. Можно передавать не ID, а имя.
+`32529af72583` - ID образа. Можно передавать не ID, а имя
 
 ### Удаление всех образов
 
@@ -248,7 +251,7 @@ docker system prune
 
 **Docker compose** - более высокоуровневый (по сравнению с Docker) инструмент, который контролирует взаимодействие контейнеров между собой
 
-[Установка на Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-ru)
+[Туториал по установке Docker compose на Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-ru)
 
 ### :one: Пример № 1
 
@@ -308,13 +311,13 @@ services:
       - dm_db
 ```
 
-`depends_on` - указываем зависимости. Данные контейнеры будут запущены до того контейнера, в котором прописаны их названия (в данном случае сначала будет запущен `dm_db`, а затем `dm_web`).
+`depends_on` - указываем списко контейнеров, которые должны быть предварительно запущены (В данном случае сначала будет запущен `dm_db`, а затем `dm_web`)
 
 `ports` нужно указывать только для того, чтобы иметь доступ снаружи. Если нужен доступ внутри одной сети docker-compose, `ports` можно не указывать
 
 ### :three: Пример № 3
 
-Контейнеры можно именовать
+Контейнеры можно именовать. Удобная схема именования: `имя-проекта-имя-сервиса`
 
 **docker-compose.yaml**
 
@@ -332,13 +335,12 @@ services:
     env_file:
       - ./.env.dev
 ```
-Удобная схема именования: `имя-проекта-имя-сервиса`
 
 ### :four: Пример № 4
 
 docker-compose создаёт общую для сервисов сеть
 
-Можно четко описать в `docker-compose.yaml`. Так же можно для каждого сервиса описать, должен ли он быть подключен к какой-то сети и если да, то к какой (по умолчанию все подключены к дефолтной).
+Можно четко описать сети в `docker-compose.yaml`. Так же можно для каждого сервиса описать, должен ли он быть подключен к какой-то сети и если да, то к какой (по умолчанию все подключены к дефолтной).
 
 **docker-compose.yaml**
 
@@ -362,7 +364,7 @@ networks:
     driver: bridge
 ```
 
-Сети не привязаны к проектам. Best practice - "неймспейсить" сети названиями проектов (т. е.: `имя-проекта-network`).
+Сети не привязаны к проектам. Best practice - "неймспейсить" сети названиями проектов (имя сети: `имя-проекта-network` либо `имя-проекта-имя-сети`).
 
 ### :bulb: Операции docker-compose
 
