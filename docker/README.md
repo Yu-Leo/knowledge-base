@@ -1,6 +1,6 @@
 # Docker и Docker Compose
 
-## Введение
+## :page_facing_up: Введение
 
 **Docker** - средство упаковки, доставки и запуска приложений. Главная задача - запустить приложение. Быстрее и легче, чем ВМ. Использует ядро базовой ОС.
 
@@ -13,7 +13,7 @@
 Реестр образов - [DockerHub](https://hub.docker.com/)
 
 
-## Пример № 1
+## :one: Пример № 1
 
 ### Сборка образа
 
@@ -43,7 +43,7 @@ CMD ["python", "app.py"]
 
 Best practices:
 - Указывать точные версии образов
-- Стараться использовать `alpine` версии . `-alpine` - легковесные версии образов, основанные на Alpine Linux
+- Стараться использовать `alpine` версии. `-alpine` - легковесные версии образов, основанные на Alpine Linux
 
 `latest` - последняя версия (используется по умолчанию)
 
@@ -64,7 +64,7 @@ docker run hello-world
 
 `hello-world` - имя образа.
 
-**Можно создать имя:**
+**Можно указать имя контейнера**
 
 ```bash
 docker run --name hello-world hello-world
@@ -87,7 +87,7 @@ docker run --rm hello-world
 Контейнер работает до тех пор, пока работает приложение.
 
 
-## Пример № 2
+## :two: Пример № 2
 
 ### Сборка образа
 
@@ -120,7 +120,7 @@ docker run --name hello-world --rm -p 8080:8080 hello-world
 `8080:8080` - порт нашей машины : порт внутри контейнера
 
 
-## Переменные окружения
+## :1234: Переменные окружения
 #### В `Dockerfile`
 
 ```dockerfile
@@ -147,8 +147,7 @@ CMD ["python", "app.py"]
 docker run --name hello-world --rm -p 8080:8080 -e TZ=Europe/Moscow hello-world
 ```
 
-
-## Docker volume
+## :mailbox: Docker volume
 
 **Docker volume** позволяет сохранить данные из контейнера (не будут удалены при остановке и удалении контейнера) 
 
@@ -173,7 +172,7 @@ docker run --name hello-world --rm -p 8080:8080 -e TZ=Europe/Moscow -v web:/usr/
 `web` - имя docker volume
 
 
-## Операции с контейнерами и образами
+## :bulb: Операции с контейнерами и образами
 
 ### Просмотр всех контейнеров (даже остановленных)
 
@@ -245,10 +244,7 @@ docker system prune
 ```
 
 
-
-
-
-## Docker compose
+## :ship: Docker compose
 
 **Docker compose** - более высокоуровневый (по сравнению с Docker) инструмент, который контролирует взаимодействие контейнеров между собой
 
@@ -257,35 +253,35 @@ docker system prune
 
 Для каждого контейнера docker-compose создаёт хосты, на которые мы можем ссылаться по имени контейнера
 
-### Пример № 1
+### :one: Пример № 1
 ```yaml
 version: "3"
 
 volumes:
-	mongodb_volume:
+  mongodb_volume:
 
 services:
-	youtube_statistic:
-		build: StatisticManager/
-		restart: always
-		enviroment:
-			-TZ=Europe/Moscow
-			
-	web_serivice:
-		build: WebSerivice/
-		restart: always
-		ports:
-			-8080:8080
-		enviroment:
-			-TZ=Europe/Moscow
-	mongodb:
-		image: mongo:latest
-		volumes:
-			-mongodb_volume:/data/db
-		restart: always
+  youtube_statistic:
+    build: StatisticManager/
+    restart: always
+    enviroment:
+      -TZ=Europe/Moscow
+  
+  web_serivice:
+    build: WebSerivice/
+    restart: always
+    ports:
+      -8080:8080
+    enviroment:
+      -TZ=Europe/Moscow
+  mongodb:
+    image: mongo:latest
+    volumes:
+      -mongodb_volume:/data/db
+    restart: always
 ```
 
-### Пример № 2
+### :two: Пример № 2
 
 **docker-compose.yaml**
 
@@ -293,31 +289,31 @@ services:
 version: "3.7"
 
 volumes:
-	postgres_data:
+  postgres_data:
 
 services:
-	dm_db:
-		image: postgres:10.1-alpine
-        volumes:
-        	- postgres_data:/var/lib/postgresql/data
-        ports:
-        	- 5435:5432
-	dm_web:
-		build: .
-		command: python /usr/src/dm_test/manage.py runserver 0.0.0.0:8000
-		volumes:
-			- .:/usr/src/dm_test
-		ports:
-			- 8000:8000
-		depends_on:
-			- dm_db
+  dm_db:
+    image: postgres:10.1-alpine
+      volumes:
+        - postgres_data:/var/lib/postgresql/data
+      ports:
+        - 5435:5432
+  dm_web:
+    build: .
+    command: python /usr/src/dm_test/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/usr/src/dm_test
+    ports:
+      - 8000:8000
+    depends_on:
+      - dm_db
 ```
 
 `depends_on` - указываем зависимости. Данные контейнеры будут запущены до того контейнера, в котором прописаны их названия (в данном случае сначала будет запущен `dm_db`, а затем `dm_web`).
 
 `ports` нужно указывать только для того, чтобы иметь доступ снаружи. Если нужен доступ внутри одной сети docker-compose, `ports` можно не указывать
 
-### Пример № 3
+### :three: Пример № 3
 
 Контейнеры можно именовать
 
@@ -327,19 +323,19 @@ services:
 version: "3"
 
 services:
-	api:
-		build: ./api
-		container_name: realworld-docker-api
-		command: npm run start
-		restart: unless-stoped
-		ports:
-			- "8000:8000"
-		env_file:
-			- ./.env.dev
+  api:
+    build: ./api
+    container_name: realworld-docker-api
+    command: npm run start
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./.env.dev
 ```
 Удобная схема именования: `имя-проекта-имя-сервиса`
 
-### Пример № 4
+### :four: Пример № 4
 
 docker-compose создаёт общую для сервисов сеть
 
@@ -351,20 +347,20 @@ docker-compose создаёт общую для сервисов сеть
 version: "3"
 
 services:
-	api:
-		build: ./api
-		container_name: realworld-docker-api
-		command: npm run start
-		restart: unless-stoped
-		ports:
-			- "8000:8000"
-		env_file:
-			- ./.env.dev
-		networks:
-			- realworld-docker-network
+  api:
+    build: ./api
+    container_name: realworld-docker-api
+    command: npm run start
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./.env.dev
+    networks:
+      - realworld-docker-network
 networks:
-	realworld-docker-network:
-		driver: bridge
+  realworld-docker-network:
+    driver: bridge
 ```
 
 Сети не привязаны к проектам. Best practice - "неймспейсить" сети названиями проектов (т. е.: `имя-проекта-network`).
@@ -417,8 +413,6 @@ docker-compose -f docker-compose.yaml -f docker-compose.dev.yaml up --build
 В данном случае в `docker-compose.dev.yaml` достаточно переопределить лишь необходимые поля (а не все из `docker-compose.yaml`).
 
 Все настройки указываются в `docker-compose.yaml` (конфигурация для продакшена). Для режима разработки необходимые настройки переопределяются в `docker-compose.dev.yaml`
-
-
 
 ## :link: Источники
 - [docker и docker compose деплой проекта с нуля](https://www.youtube.com/playlist?list=PLmC7X4gkQWCe5yNW8h4q543WUiBCM6Odj)
