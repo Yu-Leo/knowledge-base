@@ -13,9 +13,9 @@
 ## :heavy_exclamation_mark: Дисклеймер
 Данный репозиторий создан мною в первую очередь для организации и систематизации собственных знаний.
 <br>
-**Может содержать ошибки и неточности!** [Issues](https://github.com/Yu-Leo/knowledge-base/issues) и [Pull requests](https://github.com/Yu-Leo/knowledge-base/pulls) приветствуются!
+**Может содержать ошибки и неточности!** [Issues](https://github.com/Yu-Leo/knowledge-base/issues) с замечаниями и [Pull requests](https://github.com/Yu-Leo/knowledge-base/pulls) с исправлениями ошибок приветствуются!
 
-## :page_with_curl: Туториалы
+## :page_facing_up: Туториалы
 * Туториал по подключению SFML к проекту в Visual Studio 2019 - [здесь](./SFML-VisualStudio2019/README.md)
 * Туториал по деплою Django проекта на Heroku - [здесь](./django-heroku/README.md)
 
@@ -29,6 +29,8 @@
 * Как отключить lightdm - [здесь](./linux-features/lightdm.md)
 * Redshift - [здесь](./linux-features/redshift.md)
 
+## :bookmark_tabs: Конспекты
+* Docker и Docker Compose - [здесь](./docker/README.md)
 
 ## :wrench: Конфигурационные файлы
 * Мой конфиг **git**-a (`~/.gitconfig` или `~/.config/git/config`) - [здесь](./git-config/.gitconfig)
