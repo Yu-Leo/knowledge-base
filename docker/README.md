@@ -191,7 +191,7 @@ docker rm 6988fb47bc6f
 `6988fb47bc6f` - ID контейнера. Можно передавать не ID, а имя
 
 
-#### Подробная инфа о конкретном контейнере:
+### Подробная инфа о конкретном контейнере:
 
 ```bash
 docker inspect 123
@@ -249,11 +249,10 @@ docker system prune
 **Docker compose** - более высокоуровневый (по сравнению с Docker) инструмент, который контролирует взаимодействие контейнеров между собой
 
 [Установка на Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-ru)
-**docker-compose.yaml**
-
-Для каждого контейнера docker-compose создаёт хосты, на которые мы можем ссылаться по имени контейнера
 
 ### :one: Пример № 1
+
+**docker-compose.yaml**
 ```yaml
 version: "3"
 
@@ -365,7 +364,7 @@ networks:
 
 Сети не привязаны к проектам. Best practice - "неймспейсить" сети названиями проектов (т. е.: `имя-проекта-network`).
 
-### Операции docker-compose
+### :bulb: Операции docker-compose
 
 #### Сборка
 
@@ -413,6 +412,7 @@ docker-compose -f docker-compose.yaml -f docker-compose.dev.yaml up --build
 В данном случае в `docker-compose.dev.yaml` достаточно переопределить лишь необходимые поля (а не все из `docker-compose.yaml`).
 
 Все настройки указываются в `docker-compose.yaml` (конфигурация для продакшена). Для режима разработки необходимые настройки переопределяются в `docker-compose.dev.yaml`
+
 
 ## :link: Источники
 - [docker и docker compose деплой проекта с нуля](https://www.youtube.com/playlist?list=PLmC7X4gkQWCe5yNW8h4q543WUiBCM6Odj)
