@@ -97,11 +97,14 @@ docker run --rm hello-world
 ```dockerfile
 FROM python:3.6
 
-RUN mkdir -p /usr/src/app/
 WORKDIR /usr/src/app/
 
+# Requirements
+RUN pip install --upgrade pip
+COPY ./requirements.txt ./requirements.txt
+RUN pip install -r requirements.txt
+
 COPY . /usr/src/app
-RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 8080
 
@@ -109,6 +112,8 @@ CMD ["python", "app.py"]
 ```
 
 `EXPOSE 8080` - "пробрасываем" порт 8080 из контейнера
+
+Секцию `Requirements` имеет смысл указывать отдельно ДО команды копирования исходного кода в контейнер, поскольку в такком случае при измении исходного кода и перезапуске контейнера зависимости не будут переустанавлиться внутри контейнера заново.
 
 ### Запуск контейнера
 
@@ -125,11 +130,14 @@ docker run --name hello-world --rm -p 8080:8080 hello-world
 ```dockerfile
 FROM python:3.10
 
-RUN mkdir -p /usr/src/app/
 WORKDIR /usr/src/app/
 
+# Requirements
+RUN pip install --upgrade pip
+COPY ./requirements.txt ./requirements.txt
+RUN pip install -r requirements.txt
+
 COPY . /usr/src/app
-RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 8080
 
