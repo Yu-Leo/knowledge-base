@@ -19,7 +19,7 @@
 * Туториал по подключению SFML к проекту в Visual Studio 2019 - [здесь](./SFML-VisualStudio2019/README.md)
 * Туториал по деплою Django проекта на Heroku - [здесь](./django-heroku/README.md)
 
-### :penguin: Linux
+### Linux
 * Туториал по установке и настройке **vim** - [здесь](./vim-config/README.md)
 * Туториал по **gpg** - [здесь](./about-gpg/README.md)
 * Туториал по использованию gpg для подписи коммитов в git - [здесь](./about-gpg/verifying_commits.md)
@@ -35,8 +35,9 @@
 ## :wrench: Конфигурационные файлы
 * Мой конфиг **git**-a (`~/.gitconfig` или `~/.config/git/config`) - [здесь](./git-config/.gitconfig)
 * Мои настройки **PyCharm**-a - [здесь](./pycharm-config/README.md)
+* Базовый `.gitignore` для Python + PyCharm - [здесь](./gitignore-files/python_pycharm.gitignore)
 
-### :penguin: Linux
+### Linux
 * Мой конфиг **vim**-a (`~/.vimrc`) - [здесь](./vim-config/.vimrc)
 * Мои конфиги **bash**-a (`~/.bashrc`):
   * Вариант № 1 - [здесь](./bash-config/1.bashrc). Изначально создан в Linux Mint. **Из-за кастомизации `PS1` проявляется [ошибка с историей команд](https://www.linux.org.ru/forum/desktop/16257831)!**
@@ -53,7 +54,7 @@
 * Шаблон README для репозиториев - [здесь](./readme-template/README.md)
 * Скрипт для генерации исходного кода значков в README-файл - [здесь](./readme-template/badges_generator.py) ([объяснение](./readme-template/badges_generator.md))
 
-### :penguin: Linux
+### Linux
 * Команды для компиляции / интерпретации и запуска программ из **vim** - [здесь](./vim-config/run_from_vim.md)
 * Мой формат даты и времени для трея (поставил в Manjaro Cinnamon): `%A | %d.%m.%y | %H:%M` (_Воскресенье | 03.04.22 | 21:30_)
 
