@@ -9,6 +9,12 @@
 [core]
 	editor = vim
 [alias]
-	graph = log --oneline --graph
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+    hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [init]
 	defaultBranch = main
+[gpg]
+	program = gpg2
