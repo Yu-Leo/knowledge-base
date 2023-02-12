@@ -15,7 +15,32 @@
 4. Добавляем ключ: `ssh-add ~/.ssh/personal_key`
 5. При помощи `ssh-add -l` можно убедиться, что ключ добавлен
 6. **Настраиваем конфиг, как описано ниже!!!**
+7. Добавляем в `~/.bash_profile` следующее ([источник](https://stackoverflow.com/questions/18880024/start-ssh-agent-on-login)):
+```bash
+SSH_ENV="$HOME/.ssh/agent-environment"
 
+function start_agent {
+    echo "Initialising new SSH agent..."
+    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+    echo succeeded
+    chmod 600 "${SSH_ENV}"
+    . "${SSH_ENV}" > /dev/null
+    /usr/bin/ssh-add;
+}
+
+# Source SSH settings, if applicable
+
+if [ -f "${SSH_ENV}" ]; then
+    . "${SSH_ENV}" > /dev/null
+    #ps ${SSH_AGENT_PID} doesn't work under cywgin
+    ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+        start_agent;
+    }
+else
+    start_agent;
+fi
+
+```
 
 ## :one: Создание ключа "с нуля"
 
