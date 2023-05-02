@@ -23,6 +23,7 @@
 * Как отключить lightdm - [здесь](./linux-features/lightdm.md)
 * Redshift - [здесь](./linux-features/redshift.md)
 * Установка CLion на Manjaro Linux - [здесь](./clion-manjaro-linux/README.md)
+* Туториал по восстановлению grub - [здесь](./linux-grub/README.md)
 
 ## :bookmark_tabs: Конспекты
 * Docker и Docker compose - [здесь](./docker/README.md)
