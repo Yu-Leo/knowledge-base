@@ -1,7 +1,5 @@
 # :books: Моя база знаний
 
-<br>
-
 [:tv: Видео про базу знаний ("Johe News")](https://youtu.be/9hruCcHC4FY)
 
 ## :heavy_exclamation_mark: Дисклеймер
@@ -34,8 +32,8 @@
 * Базовый `.gitignore` для Python + PyCharm - [здесь](./gitignore-files/python_pycharm.gitignore)
 
 ### Linux
-* Мой конфиг **vim**-a (`~/.vimrc`) - [здесь](./vim-config/.vimrc)
-* Мои конфиги **bash**-a (`~/.bashrc`):
+* Мой конфиг `vim`-a (`~/.vimrc`) - [здесь](./vim-config/.vimrc)
+* Мои конфиги `bash`-a (`~/.bashrc`):
   * Вариант № 1 - [здесь](./bash-config/1.bashrc). Изначально создан в Linux Mint. **Из-за кастомизации `PS1` проявляется [ошибка с историей команд](https://www.linux.org.ru/forum/desktop/16257831)!**
   * Вариант № 2 - [здесь](./bash-config/2.bashrc). Ошибка с историей команд не наблюдалась
 * i3wm (i3-gaps)
@@ -44,6 +42,8 @@
 * polybar
   * Дефолтный конфиг - [здесь](./polybar-config/default_config)
   * Мой конфиг на 23.03.22 (тестовый) - [здесь](./polybar-config/my_config)
+* Мои конфиги `tmux` (положить в `~`) - [здесь](./tmux-config)
+* Мой конфиг `zsh` с oh-my-zsh (положить в `~`) - [здесь](./zsh-config)
 
 ## :pencil2: Разное
 
@@ -55,7 +55,7 @@
 * Изменить данные автора коммита по e-mail во всех коммитах репозитория - [здесь](./git-tutorials/change_author.md)
 
 ### Linux
-* Команды для компиляции / интерпретации и запуска программ из **vim** - [здесь](./vim-config/run_from_vim.md)
+* Команды для компиляции / интерпретации и запуска программ из `vim` - [здесь](./vim-config/run_from_vim.md)
 * Мой формат даты и времени для трея (поставил в Manjaro Cinnamon): `%A | %d.%m.%y | %H:%M` (_Воскресенье | 03.04.22 | 21:30_)
 
 ## :link: Ссылки
