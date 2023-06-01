@@ -44,6 +44,7 @@
 * polybar
   * Дефолтный конфиг - [здесь](./polybar-config/default_config)
   * Мой конфиг на 23.03.22 (тестовый) - [здесь](./polybar-config/my_config)
+* Мои конфиги `tmux` (положить в `~`) - [здесь](./tmux-config)
 
 ## :pencil2: Разное
 
