@@ -71,6 +71,7 @@
 * Git Flow - [статья](https://habr.com/ru/post/106912/)
 * "В чём разница между популярными Open Source лицензиями?" - [статья](https://tproger.ru/articles/whats-difference-between-licenses/)
 * Крутой С++ Code Style - [github](https://github.com/Demon1747/lectures/blob/master/style_guide.md)
+* C++ форматтер - [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html), [описание конфига](https://clang.llvm.org/docs/ClangFormatStyleOptions.html)
 
 ## :open_hands: Лицензия
 
