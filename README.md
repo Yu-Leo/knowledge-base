@@ -12,7 +12,7 @@
 * Туториал по деплою Django проекта на Heroku - [здесь](./django-heroku/README.md)
 
 ### Linux
-* Туториал по установке и настройке **vim** - [здесь](./vim-config/README.md)
+* Туториал по установке и настройке **vim** - [здесь](configs/vim-config/README.md)
 * Туториал по **gpg** - [здесь](./about-gpg/README.md)
 * Туториал по использованию gpg для подписи коммитов в git - [здесь](./about-gpg/verifying_commits.md)
 * Туториал по настройке подключения к github по **ssh** - [здесь](./about-ssh/README.md)
@@ -27,23 +27,21 @@
 * Docker и Docker compose - [здесь](./docker/README.md)
 
 ## :wrench: Конфигурационные файлы
-* Мой конфиг **git**-a (`~/.gitconfig` или `~/.config/git/config`) - [здесь](./git-config/.gitconfig)
-* Мои настройки **PyCharm**-a - [здесь](./pycharm-config/README.md)
+* Конфиг **git**-a (`~/.gitconfig` или `~/.config/git/config`) - [здесь](./git-config/.gitconfig)
+* Настройки **PyCharm**-a - [здесь](configs/pycharm-config/README.md)
 * Базовый `.gitignore` для Python + PyCharm - [здесь](./gitignore-files/python_pycharm.gitignore)
-
-### Linux
-* Мой конфиг `vim`-a (`~/.vimrc`) - [здесь](./vim-config/.vimrc)
-* Мои конфиги `bash`-a (`~/.bashrc`):
-  * Вариант № 1 - [здесь](./bash-config/1.bashrc). Изначально создан в Linux Mint. **Из-за кастомизации `PS1` проявляется [ошибка с историей команд](https://www.linux.org.ru/forum/desktop/16257831)!**
-  * Вариант № 2 - [здесь](./bash-config/2.bashrc). Ошибка с историей команд не наблюдалась
+* Конфиг `vim`-a (`~/.vimrc`) - [здесь](./vim-config/.vimrc)
+* Конфиги `bash`-a (`~/.bashrc`):
+  * Вариант № 1 - [здесь](1.bashrc). Изначально создан в Linux Mint. **Из-за кастомизации `PS1` проявляется [ошибка с историей команд](https://www.linux.org.ru/forum/desktop/16257831)!**
+  * Вариант № 2 - [здесь](2.bashrc). Ошибка с историей команд не наблюдалась
 * i3wm (i3-gaps)
-  * Дефолтный конфиг Manjaro i3 - [здесь](./i3-config/default_manjaro_i3_config)
-  * Мой конфиг на 23.03.22 (тестовый) - [здесь](./i3-config/my_i3_config)
+  * Дефолтный конфиг Manjaro i3 - [здесь](default_manjaro_i3_config)
+  * Мой конфиг на 23.03.22 (тестовый) - [здесь](my_i3_config)
 * polybar
-  * Дефолтный конфиг - [здесь](./polybar-config/default_config)
-  * Мой конфиг на 23.03.22 (тестовый) - [здесь](./polybar-config/my_config)
-* Мои конфиги `tmux` (положить в `~`) - [здесь](./tmux-config)
-* Мой конфиг `zsh` с oh-my-zsh (положить в `~`) - [здесь](./zsh-config)
+  * Дефолтный конфиг - [здесь](default_config)
+  * Мой конфиг на 23.03.22 (тестовый) - [здесь](my_config)
+* Конфиги `tmux` (положить в `~`) - [здесь](./tmux-config)
+* Конфиг `zsh` с oh-my-zsh (положить в `~`) - [здесь](./zsh-config)
 
 ## :pencil2: Разное
 
@@ -55,7 +53,7 @@
 * Изменить данные автора коммита по e-mail во всех коммитах репозитория - [здесь](./git-tutorials/change_author.md)
 
 ### Linux
-* Команды для компиляции / интерпретации и запуска программ из `vim` - [здесь](./vim-config/run_from_vim.md)
+* Команды для компиляции / интерпретации и запуска программ из `vim` - [здесь](run_from_vim.md)
 * Мой формат даты и времени для трея (поставил в Manjaro Cinnamon): `%A | %d.%m.%y | %H:%M` (_Воскресенье | 03.04.22 | 21:30_)
 
 ## :link: Ссылки

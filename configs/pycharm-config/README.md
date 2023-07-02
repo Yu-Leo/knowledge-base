@@ -10,7 +10,7 @@
 
 ## Keymap
 
-![keymap_settings](./keymap_settings.jpg)
+![keymap_settings](keymap_settings.jpg)
 
 ## Editor
 ### Font
@@ -24,17 +24,17 @@
 
 `Scheme`: **MyColorSheme** (`Import Scheme`)
 
-Моя цветовая тема: [.jar](./YuLeoColourScheme.jar), [.icls](./YuLeoColourScheme.icls)
+Моя цветовая тема: [.jar](YuLeoColourScheme.jar), [.icls](YuLeoColourScheme.icls)
 
 
 ## Version Control
 ### Git
 
-![git_settings](./git_settings.jpg)
+![git_settings](git_settings.jpg)
 
 
 ## Tools
 ## Python Integrated Tools
 
-![docstrings_format](./docstrings_format.jpg)
+![docstrings_format](docstrings_format.jpg)
 
