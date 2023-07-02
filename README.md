@@ -27,19 +27,19 @@
 * Docker и Docker compose - [здесь](./docker/README.md)
 
 ## :wrench: Конфигурационные файлы
-* Конфиг **git**-a (`~/.gitconfig` или `~/.config/git/config`) - [здесь](./git-config/.gitconfig)
-* Настройки **PyCharm**-a - [здесь](configs/pycharm-config/README.md)
+* Конфиг **git**-a (`~/.gitconfig` или `~/.config/git/config`) - [здесь](./configs/git-config/.gitconfig)
+* Настройки **PyCharm**-a - [здесь](./configs/pycharm-config/README.md)
 * Базовый `.gitignore` для Python + PyCharm - [здесь](./gitignore-files/python_pycharm.gitignore)
-* Конфиг `vim`-a (`~/.vimrc`) - [здесь](./vim-config/.vimrc)
+* Конфиг `vim`-a (`~/.vimrc`) - [здесь](./configs/vim-config/.vimrc)
 * Конфиги `bash`-a (`~/.bashrc`):
-  * Вариант № 1 - [здесь](1.bashrc). Изначально создан в Linux Mint. **Из-за кастомизации `PS1` проявляется [ошибка с историей команд](https://www.linux.org.ru/forum/desktop/16257831)!**
-  * Вариант № 2 - [здесь](2.bashrc). Ошибка с историей команд не наблюдалась
+  * Вариант № 1 - [здесь](./configs/bash-config/1.bashrc). Изначально создан в Linux Mint. **Из-за кастомизации `PS1` проявляется [ошибка с историей команд](https://www.linux.org.ru/forum/desktop/16257831)!**
+  * Вариант № 2 - [здесь](./configs/bash-config/2.bashrc). Ошибка с историей команд не наблюдалась
 * i3wm (i3-gaps)
-  * Дефолтный конфиг Manjaro i3 - [здесь](default_manjaro_i3_config)
+  * Дефолтный конфиг Manjaro i3 - [здесь](./configs/i3-config/default_manjaro_i3_config)
 * polybar
-  * Дефолтный конфиг - [здесь](default_config)
-* Конфиги `tmux` (положить в `~`) - [здесь](./tmux-config)
-* Конфиг `zsh` с oh-my-zsh (положить в `~`) - [здесь](./zsh-config)
+  * Дефолтный конфиг - [здесь](./configs/polybar-config/default_config)
+* Конфиги `tmux` (положить в `~`) - [здесь](./configs/tmux-config)
+* Конфиг `zsh` с oh-my-zsh (положить в `~`) - [здесь](./configs/zsh-config/.zshrc)
 
 ## :pencil2: Разное
 
