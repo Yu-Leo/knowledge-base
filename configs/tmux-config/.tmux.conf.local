@@ -1,125 +1,56 @@
 # : << EOF
 # https://github.com/gpakosz/.tmux
-# (‑●‑●)> dual licensed under the WTFPL v2 license and the MIT license,
-#         without any warranty.
-#         Copyright 2012— Gregory Pakosz (@gpakosz).
-
 
 # -- session creation ----------------------------------------------------------
 
-# prompt for session name when creating a new session, possible values are:
-#   - true
-#   - false (default)
-#   - disabled (do not modify new-session bindings)
 tmux_conf_new_session_prompt=false
-
 
 # -- windows & pane creation ---------------------------------------------------
 
-# new window retains current path, possible values are:
-#   - true
-#   - false (default)
-#   - disabled (do not modify new-window bindings)
 tmux_conf_new_window_retain_current_path=false
 
-# new window tries to reconnect ssh sessions, possible values are:
-#   - true
-#   - false (default)
-#   - disabled (do not modify new-window bindings)
 tmux_conf_new_window_reconnect_ssh=false
 
-# new pane retains current path, possible values are:
-#   - true (default)
-#   - false
-#   - disabled (do not modify split-window bindings)
 tmux_conf_new_pane_retain_current_path=true
 
-# new pane tries to reconnect ssh sessions, possible values are:
-#   - true
-#   - false (default)
-#   - disabled (do not modify split-window bindings)
 tmux_conf_new_pane_reconnect_ssh=false
-
 
 # -- display -------------------------------------------------------------------
 
-# RGB 24-bit colour support, possible values are:
-#   - true
-#   - false
-#   - auto (default)
-#
-# automatic detection relies on the COLORTERM environment variable being defined
-# to 'truecolor' or '24bit' or '$ tput colors' answering '16777216'
-# see https://github.com/termstandard/colors
 tmux_conf_24b_colour=auto
-
 
 # -- theming -------------------------------------------------------------------
 
-# enable or disable theming:
-#   - enabled (default)
-#   - disabled
-# when disabled, all tmux_conf_theme_xxx variables are ignored except:
-#   - tmux_conf_theme_pairing
-#   - tmux_conf_theme_prefix
-#   - tmux_conf_theme_mouse
-#   - tmux_conf_theme_root
-#   - tmux_conf_theme_synchronized
 tmux_conf_theme=enabled
 
 # default theme
-tmux_conf_theme_colour_1="#282828"    # dark gray
-tmux_conf_theme_colour_2="#303030"    # gray
+tmux_conf_theme_colour_1="#000000"    # dark gray
+tmux_conf_theme_colour_2="default"    # gray
 tmux_conf_theme_colour_3="#8a8a8a"    # light gray
-tmux_conf_theme_colour_4="#83a598"    # light blue
-tmux_conf_theme_colour_5="#fabd2f"    # yellow
+tmux_conf_theme_colour_4="#61afef"    # light blue
+tmux_conf_theme_colour_5="#d19a66"    # yellow
 tmux_conf_theme_colour_6="#080808"    # dark gray
 tmux_conf_theme_colour_7="#e4e4e4"    # white
 tmux_conf_theme_colour_8="#080808"    # dark gray
-tmux_conf_theme_colour_9="#fabd2f"    # yellow
-tmux_conf_theme_colour_10="#d3869b"   # pink
-tmux_conf_theme_colour_11="#b8bb26"   # green
+tmux_conf_theme_colour_9="#d19a66"    # yellow
+tmux_conf_theme_colour_10="#c678dd"   # pink
+tmux_conf_theme_colour_11="#98c379"   # green
 tmux_conf_theme_colour_12="#8a8a8a"   # light gray
 tmux_conf_theme_colour_13="#e4e4e4"   # white
 tmux_conf_theme_colour_14="#080808"   # dark gray
 tmux_conf_theme_colour_15="#080808"   # dark gray
-tmux_conf_theme_colour_16="#fb4934"   # red
-tmux_conf_theme_colour_17="#ebdbb2"   # white
-
-# default theme (ansi)
-#tmux_conf_theme_colour_1="colour0"
-#tmux_conf_theme_colour_2="colour8"
-#tmux_conf_theme_colour_3="colour8"
-#tmux_conf_theme_colour_4="colour14"
-#tmux_conf_theme_colour_5="colour11"
-#tmux_conf_theme_colour_6="colour0"
-#tmux_conf_theme_colour_7="colour15"
-#tmux_conf_theme_colour_8="colour0"
-#tmux_conf_theme_colour_9="colour11"
-#tmux_conf_theme_colour_10="colour13"
-#tmux_conf_theme_colour_11="colour10"
-#tmux_conf_theme_colour_12="colour8"
-#tmux_conf_theme_colour_13="colour15"
-#tmux_conf_theme_colour_14="colour0"
-#tmux_conf_theme_colour_15="colour0"
-#tmux_conf_theme_colour_16="colour1"
-#tmux_conf_theme_colour_17="colour15"
+tmux_conf_theme_colour_16="#e06c75"   # red
+tmux_conf_theme_colour_17="#e4e4e4"   # white
 
 # window style
 tmux_conf_theme_window_fg="default"
 tmux_conf_theme_window_bg="default"
 
-# highlight focused pane, possible values are:
-#   - true
-#   - false (default)
 tmux_conf_theme_highlight_focused_pane=false
 
 # focused pane colours:
 tmux_conf_theme_focused_pane_bg="$tmux_conf_theme_colour_2"
 
-# pane border style, possible values are:
-#   - thin (default)
-#   - fat
 tmux_conf_theme_pane_border_style=thin
 
 # pane borders colours:
@@ -149,53 +80,21 @@ tmux_conf_theme_mode_bg="$tmux_conf_theme_colour_5"
 tmux_conf_theme_mode_attr="bold"
 
 # status line style
-tmux_conf_theme_status_fg="$tmux_conf_theme_colour_3"
-tmux_conf_theme_status_bg="$tmux_conf_theme_colour_1"
+tmux_conf_theme_status_fg="$tmux_conf_theme_colour_1"
+tmux_conf_theme_status_bg="$tmux_conf_theme_colour_2"
 tmux_conf_theme_status_attr="none"
 
-# terminal title
-#   - built-in variables are:
-#     - #{circled_window_index}
-#     - #{circled_session_name}
-#     - #{hostname}
-#     - #{hostname_ssh}
-#     - #{hostname_full}
-#     - #{hostname_full_ssh}
-#     - #{username}
-#     - #{username_ssh}
 tmux_conf_theme_terminal_title="#h ❐ #S ● #I #W"
 
-# window status style
-#   - built-in variables are:
-#     - #{circled_window_index}
-#     - #{circled_session_name}
-#     - #{hostname}
-#     - #{hostname_ssh}
-#     - #{hostname_full}
-#     - #{hostname_full_ssh}
-#     - #{username}
-#     - #{username_ssh}
 tmux_conf_theme_window_status_fg="$tmux_conf_theme_colour_3"
-tmux_conf_theme_window_status_bg="$tmux_conf_theme_colour_1"
+tmux_conf_theme_window_status_bg="$tmux_conf_theme_colour_2"
 tmux_conf_theme_window_status_attr="none"
 tmux_conf_theme_window_status_format="#I #W#{?#{||:#{window_bell_flag},#{window_zoomed_flag}}, ,}#{?window_bell_flag,!,}#{?window_zoomed_flag,Z,}"
 
-# window current status style
-#   - built-in variables are:
-#     - #{circled_window_index}
-#     - #{circled_session_name}
-#     - #{hostname}
-#     - #{hostname_ssh}
-#     - #{hostname_full}
-#     - #{hostname_full_ssh}
-#     - #{username}
-#     - #{username_ssh}
 tmux_conf_theme_window_status_current_fg="$tmux_conf_theme_colour_1"
 tmux_conf_theme_window_status_current_bg="$tmux_conf_theme_colour_4"
 tmux_conf_theme_window_status_current_attr="bold"
 tmux_conf_theme_window_status_current_format="#I #W#{?#{||:#{window_bell_flag},#{window_zoomed_flag}}, ,}#{?window_bell_flag,!,}#{?window_zoomed_flag,Z,}"
-#tmux_conf_theme_window_status_current_format="#{circled_window_index} #W#{?#{||:#{window_bell_flag},#{window_zoomed_flag}}, ,}#{?window_bell_flag,!,}#{?window_zoomed_flag,Z,}"
-#tmux_conf_theme_window_status_current_format="#I #W#{?#{||:#{window_bell_flag},#{window_zoomed_flag}}, ,}#{?window_bell_flag,🔔,}#{?window_zoomed_flag,🔍,}"
 
 # window activity status style
 tmux_conf_theme_window_status_activity_fg="default"
@@ -217,38 +116,7 @@ tmux_conf_theme_left_separator_main=""
 tmux_conf_theme_left_separator_sub="|"
 tmux_conf_theme_right_separator_main=""
 tmux_conf_theme_right_separator_sub="|"
-#tmux_conf_theme_left_separator_main='\uE0B0'  # /!\ you don't need to install Powerline
-#tmux_conf_theme_left_separator_sub='\uE0B1'   #   you only need fonts patched with
-#tmux_conf_theme_right_separator_main='\uE0B2' #   Powerline symbols or the standalone
-#tmux_conf_theme_right_separator_sub='\uE0B3'  #   PowerlineSymbols.otf font, see README.md
 
-# status left/right content:
-#   - separate main sections with "|"
-#   - separate subsections with ","
-#   - built-in variables are:
-#     - #{battery_bar}
-#     - #{battery_hbar}
-#     - #{battery_percentage}
-#     - #{battery_status}
-#     - #{battery_vbar}
-#     - #{circled_session_name}
-#     - #{hostname_ssh}
-#     - #{hostname}
-#     - #{hostname_full}
-#     - #{hostname_full_ssh}
-#     - #{loadavg}
-#     - #{mouse}
-#     - #{pairing}
-#     - #{prefix}
-#     - #{root}
-#     - #{synchronized}
-#     - #{uptime_y}
-#     - #{uptime_d} (modulo 365 when #{uptime_y} is used)
-#     - #{uptime_h}
-#     - #{uptime_m}
-#     - #{uptime_s}
-#     - #{username}
-#     - #{username_ssh}
 tmux_conf_theme_status_left=" ❐ #S "
 tmux_conf_theme_status_right=" #{username}#{root} | #{hostname} "
 
@@ -287,122 +155,24 @@ tmux_conf_theme_synchronized_bg="none"
 tmux_conf_theme_synchronized_attr="none"
 
 # clock style (when you hit <prefix> + t)
-# you may want to use %I:%M %p in place of %R in tmux_conf_theme_status_right
 tmux_conf_theme_clock_colour="$tmux_conf_theme_colour_4"
 tmux_conf_theme_clock_style="24"
 
 
 # -- clipboard -----------------------------------------------------------------
 
-# in copy mode, copying selection also copies to the OS clipboard
-#   - true
-#   - false (default)
-#   - disabled
-# on macOS, this requires installing reattach-to-user-namespace, see README.md
-# on Linux, this requires xsel, xclip or wl-copy
 tmux_conf_copy_to_os_clipboard=false
-
-
-# -- user customizations -------------------------------------------------------
-# this is the place to override or undo settings
-
-# increase history size
-#set -g history-limit 10000
-
-# start with mouse mode enabled
-#set -g mouse on
-
-# force Vi mode
-#   really you should export VISUAL or EDITOR environment variable, see manual
-#set -g status-keys vi
-#set -g mode-keys vi
-
-# replace C-b by C-a instead of using both prefixes
-# set -gu prefix2
-# unbind C-a
-# unbind C-b
-# set -g prefix C-a
-# bind C-a send-prefix
-
-# if you don't want Oh my tmux! to alter a binding, use #!important
-# bind c new-window -c '#{pane_current_path}' #!important
-
-# move status line to top
-#set -g status-position top
-
 
 # -- tpm -----------------------------------------------------------------------
 
-# while I don't use tpm myself, many people requested official support so here
-# is a seamless integration that automatically installs plugins in parallel
+tmux_conf_update_plugins_on_launch=false
 
-# whenever a plugin introduces a variable to be used in 'status-left' or
-# 'status-right', you can use it in 'tmux_conf_theme_status_left' and
-# 'tmux_conf_theme_status_right' variables.
-
-# by default, launching tmux will update tpm and all plugins
-#   - true (default)
-#   - false
-tmux_conf_update_plugins_on_launch=true
-
-# by default, reloading the configuration will update tpm and all plugins
-#   - true (default)
-#   - false
 tmux_conf_update_plugins_on_reload=true
 
-# by default, reloading the configuration will uninstall tpm and plugins when no
-# plugins are enabled
-#   - true (default)
-#   - false
 tmux_conf_uninstall_plugins_on_reload=true
 
-# /!\ the tpm bindings differ slightly from upstream:
-#   - installing plugins: <prefix> + I
-#   - uninstalling plugins: <prefix> + Alt + u
-#   - updating plugins: <prefix> + u
-
-# /!\ do not add set -g @plugin 'tmux-plugins/tpm'
-# /!\ do not add run '~/.tmux/plugins/tpm/tpm'
-
-# to enable a plugin, use the 'set -g @plugin' syntax:
-# visit https://github.com/tmux-plugins for available plugins
-#set -g @plugin 'tmux-plugins/tmux-copycat'
-#set -g @plugin 'tmux-plugins/tmux-cpu'
-#set -g @plugin 'tmux-plugins/tmux-resurrect'
-#set -g @plugin 'tmux-plugins/tmux-continuum'
-#set -g @continuum-restore 'on'
-
-# Плагины
+# Plugins
 set -g @plugin 'tmux-plugins/tmux-resurrect' 
 set -g @plugin 'tmux-plugins/tmux-continuum'
 set -g @plugin 'tmux-plugins/tmux-sessionist'
 
-set -g @resurrect-capture-pane-contents 'on'
-#set -g @continuum-restore 'on'
-
-# -- custom variables ----------------------------------------------------------
-
-# to define a custom #{foo} variable, define a POSIX shell function between the
-# '# EOF' and the '# "$@"' lines. Please note that the opening brace { character
-# must be on the same line as the function name otherwise the parse won't detect
-# it.
-#
-# then, use #{foo} in e.g. the 'tmux_conf_theme_status_left' or the
-# 'tmux_conf_theme_status_right' variables.
-
-# # /!\ do not remove the following line
-# EOF
-#
-# # /!\ do not "uncomment" the functions: the leading "# " characters are needed
-#
-# weather() {                                         # see https://github.com/chubin/wttr.in#one-line-output
-#   curl -f -s -m 2 'wttr.in?format=3' || printf '\n' # /!\ make sure curl is installed
-#   sleep 900                                         # sleep for 15 minutes, throttle network requests whatever the value of status-interval
-# }
-#
-# online() {
-#   ping -c 1 1.1.1.1 >/dev/null 2>&1 && printf '✔' || printf '✘'
-# }
-#
-# "$@"
-# # /!\ do not remove the previous line

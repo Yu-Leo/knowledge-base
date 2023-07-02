@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/go/bin:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -70,7 +70,7 @@ ZSH_THEME="gozilla"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux)
+plugins=(git tmux history sudo zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,3 +99,25 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# ===========================================
+
+# if [[ $(ps --no-header -p $PPID -o comm) =~ '^alacritty$' ]]; then
+#         for wid in $(xdotool search --pid $PPID); do
+#             xprop -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 0 -id $wid; done
+# fi
+
+if [ -x "$(command -v exa)" ]; then
+    alias l="exa --long --all --group"
+fi
+
+alias gwb="cd ~/Code/projects/work/bb/back/monolith && nvim"
+alias gwf="cd ~/Code/projects/work/bb/front && nvim"
+
+alias i="sudo pacman -S"
+alias m="make"
+alias n="nvim"
+alias v="vim"
+alias c="clear"
+
+hash -d w=~/Code/projects/work
