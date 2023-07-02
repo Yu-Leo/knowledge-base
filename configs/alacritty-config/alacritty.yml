@@ -1,0 +1,55 @@
+schemes:
+  one_dark_darker: &one_dark_darker
+    primary:
+      background: "0x1f2329"
+      foreground: "0xa0a8b7"
+
+    normal:
+      black: "0x0e1013"
+      red: "0xe55561"
+      green: "0x8ebd6b"
+      yellow: "0xe2b86b"
+      blue: "0x4fa6ed"
+      magenta: "0xc678dd"
+      cyan: "0x48b0bd"
+      white: "0xabb2bf"
+
+    bright:
+      black: "0x5c6370"
+      red: "0xe06c75"
+      green: "0x98c379"
+      yellow: "0xd19a66"
+      blue: "0x61afef"
+      magenta: "0xc678dd"
+      cyan: "0x56b6c2"
+      white: "0xffffff"
+
+colors: *one_dark_darker
+
+window:
+  padding:
+    x: 0
+    y: 0
+  opacity: 1.0
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+  bold:
+    family: JetBrains Mono
+    style: Bold
+  italic:
+    family: JetBrains Mono
+    style: Italic
+  size: 12.0
+key_bindings:
+  - { key: F11, action: ToggleFullscreen }
+  # - { key: K, mods: Control, action: ScrollLineUp }
+  - { key: K, mods: Control|Shift, action: ScrollPageUp }
+  # - { key: J, mods: Control, action: ScrollLineDown }
+  - { key: J, mods: Control|Shift, action: ScrollPageDown }
+
+scrolling:
+  history: 10000
+env:
+  TERM: xterm-256color
