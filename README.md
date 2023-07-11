@@ -60,6 +60,7 @@
 * Версионирование:
   * Cемантическое Версионирование 2.0.0 - [сайт](https://semver.org/lang/ru/)
   * "Стадии разработки и тестирования ПО или что означает Pre-Alpha, Alpha, Beta, RC, Final" - [сайт](https://monobit.ru/stadii-razrabotki-i-testirovaniya-po-ili-chto-oznachaet-pre-alpha-alpha-beta-rc-final.html)
+* Conventional Commits - [сайт](https://www.conventionalcommits.org/en/v1.0.0/)
 * Описание разметки файла README.md - [github](https://github.com/GnuriaN/format-README)
 * Emoji Cheat Sheet - [сайт](https://www.webfx.com/tools/emoji-cheat-sheet/)
 * Значки для README - [сайт](https://shields.io/)
@@ -69,7 +70,8 @@
 * "В чём разница между популярными Open Source лицензиями?" - [статья](https://tproger.ru/articles/whats-difference-between-licenses/)
 * Крутой С++ Code Style - [github](https://github.com/Demon1747/lectures/blob/master/style_guide.md)
 * C++ форматтер - [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html), [описание конфига](https://clang.llvm.org/docs/ClangFormatStyleOptions.html)
-
+* Обои на рабочий стол - [сайт](https://www.goodfon.ru/)
+ 
 ## :open_hands: Лицензия
 
 Если данный репозиторий был полезен для Вас, поставьте звёздочку ⭐️
