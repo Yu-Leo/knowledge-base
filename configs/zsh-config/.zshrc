@@ -111,13 +111,10 @@ if [ -x "$(command -v exa)" ]; then
     alias l="exa --long --all --group"
 fi
 
-alias gwb="cd ~/Code/projects/work/bb/back/monolith && nvim"
-alias gwf="cd ~/Code/projects/work/bb/front && nvim"
-
 alias i="sudo pacman -S"
 alias m="make"
 alias n="nvim"
 alias v="vim"
 alias c="clear"
+alias e="exit"
 
-hash -d w=~/Code/projects/work
