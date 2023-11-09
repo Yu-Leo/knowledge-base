@@ -19,7 +19,12 @@ gaa='git add --all'
 gc='git commit'
 'gc!'='git commit --verbose --amend'
 
-# Push/pull
+# Diff
+gd='git diff'
+gdca='git diff --cached'
+
+# Clone/pull/push
+gcl='git clone --recurse-submodules'
 gp='git push'
 gpsup='git push --set-upstream origin $(git_current_branch)' # Push new branch to origin
 'gpf!'='git push --force'
