@@ -118,3 +118,6 @@ alias v="vim"
 alias c="clear"
 alias e="exit"
 
+alias gh="git hist"
+alias gcn="git fetch --prune"
+
