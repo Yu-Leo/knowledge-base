@@ -1,0 +1,65 @@
+[colors.bright]
+black = "0x5c6370"
+blue = "0x61afef"
+cyan = "0x56b6c2"
+green = "0x98c379"
+magenta = "0xc678dd"
+red = "0xe06c75"
+white = "0xffffff"
+yellow = "0xd19a66"
+
+[colors.normal]
+black = "0x0e1013"
+blue = "0x4fa6ed"
+cyan = "0x48b0bd"
+green = "0x8ebd6b"
+magenta = "0xc678dd"
+red = "0xe55561"
+white = "0xabb2bf"
+yellow = "0xe2b86b"
+
+[colors.primary]
+background = "0x1f2329"
+foreground = "0xa0a8b7"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "JetBrains Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrains Mono"
+style = "Italic"
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "K"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "J"
+mods = "Control|Shift"
+
+[scrolling]
+history = 10000
+
+[window]
+opacity = 1.0
+
+[window.padding]
+x = 0
+y = 0

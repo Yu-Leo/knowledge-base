@@ -36,8 +36,8 @@
 * polybar
   * Дефолтный конфиг - [здесь](./configs/polybar-config/default_config)
 * Конфиги `tmux` (положить в `~`) - [здесь](./configs/tmux-config)
-* Конфиг `zsh` с oh-my-zsh (положить в `~`) - [здесь](./configs/zsh-config/.zshrc)
-* Конфиг `alacritty` (положить в `~/.config/alacritty`) - [здесь](./configs/alacritty-config/alacritty.yml)
+* Конфиг `zsh`-а с oh-my-zsh (`~/.zshrc`) - [здесь](./configs/zsh-config/.zshrc)
+* Конфиг `alacritty` (`~/.config/alacritty/alacritty.toml`) - [здесь](./configs/alacritty-config/alacritty.toml)
 
 ## :pencil2: Разное
 
