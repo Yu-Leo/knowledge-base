@@ -1,4 +1,4 @@
-# Шпаргалка по алиасам плагина git для oh-my-zsh
+# Шпаргалка по плагину git для oh-my-zsh
 
 Полный список алиасов - [здесь](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git#aliases).
 
@@ -73,8 +73,33 @@ gsh='git show'
 gsta='git stash push'
 gstp='git stash pop'
 
+# Reset
+grh='git reset'
+grhh='git reset --hard'
+groh='git reset origin/$(git_current_branch) --hard'
+```
 
-# Custom aliases
+## Кастомные алиасы
+
+```bash
+# alias='command'
+
 gh='git hist'
 gcn='git fetch --prune'
 ```
+
+## Функции
+
+| Команда               | Описание                                              |
+| :-------------------- | :---------------------------------------------------- |
+| `gbda`                | Удалить все смердженные ветки                         |
+| `grename <old> <new>` | Переименовать ветку `<old>` в `<new>`, включая origin |
+
+
+## Work in Progress (WIP)
+
+| Команда            | Описание                                        |
+| :----------------- | :---------------------------------------------- |
+| `gwip`             | Закоммитить изменения wip                       |
+| `gunwip`           | Раскоммитить изменения wip                      |
+| `gunwipall`        | Раскоммитить все изменения wip                  |
