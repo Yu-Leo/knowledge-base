@@ -12,13 +12,14 @@
 * Туториал по деплою Django проекта на Heroku - [здесь](./django-heroku/README.md)
 
 ### Linux
-* Туториал по установке и настройке **vim** - [здесь](configs/vim-config/README.md)
-* Добавление поддержки кирилических символов в tty - [здесь](./linux-features/cyrillic-in-tty.md)
-* Как отключить системный звук "Бип" (beep) - [здесь](./linux-features/beep.md)
-* Как отключить lightdm - [здесь](./linux-features/lightdm.md)
-* Redshift - [здесь](./linux-features/redshift.md)
-* Установка CLion на Manjaro Linux - [здесь](./clion-manjaro-linux/README.md)
-* Туториал по восстановлению grub - [здесь](./linux-grub/README.md)
+* Туториал по установке и настройке **vim** - [здесь](./configs/vim-config/README.md)
+* Добавление поддержки кирилических символов в tty - [здесь](./linux/cyrillic-in-tty.md)
+* Как отключить системный звук "Бип" (beep) - [здесь](./linux/beep.md)
+* Как отключить lightdm - [здесь](./linux/lightdm.md)
+* Redshift - [здесь](./linux/redshift.md)
+* Установка CLion на Manjaro Linux - [здесь](./linux/clion-manjaro/README.md)
+* Восстановление grub - [здесь](./linux/grub.md)
+* Настройка жестов тачпада - [здесь](./linux/gestures/README.md)
 
 ## :bookmark_tabs: Конспекты
 * Docker и Docker compose - [здесь](./docker/README.md)
