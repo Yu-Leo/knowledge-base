@@ -63,6 +63,7 @@ grbi='git rebase --interactive'
 # Delete branch
 gbD='git branch --delete --force'
 gbd='git branch --delete'
+gpod='git push origin --delete'
 
 # History
 glod='git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset"' # Absolute timestamps
@@ -77,6 +78,12 @@ gstp='git stash pop'
 grh='git reset'
 grhh='git reset --hard'
 groh='git reset origin/$(git_current_branch) --hard'
+
+# Merge
+gm='git merge'
+
+# Tags
+gts='git tag --sign'
 ```
 
 ## Кастомные алиасы
