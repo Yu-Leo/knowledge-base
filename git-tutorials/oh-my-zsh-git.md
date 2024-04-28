@@ -84,6 +84,9 @@ gm='git merge'
 
 # Tags
 gts='git tag --sign'
+
+# Revert
+grev='git revert'
 ```
 
 ## Кастомные алиасы
@@ -93,6 +96,7 @@ gts='git tag --sign'
 
 gh='git hist'
 gcn='git fetch --prune'
+gcmp='gcm && gpr'
 ```
 
 ## Функции
