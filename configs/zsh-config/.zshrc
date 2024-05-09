@@ -121,3 +121,46 @@ alias e="exit"
 alias gh="git hist"
 alias gcn="git fetch --prune"
 
+alias gcmp="gcm && gpr"
+
+function jt() {
+    current_branch | ggrep -Po "^[[:alpha:]]*-\d*(?=-)" | tr "[:lower:]" "[:upper:]"
+}
+
+function jc() {
+    current_branch | ggrep -Po "(?<=\d-)[[:word:]]*(?=-)" | head -n 1 | tr "[:upper:]" "[:lower:]"
+}
+
+function glc {
+    t=""
+
+    while getopts "aedn" opt; do
+      case $opt in
+        a)
+          t="[+] "
+          ;;
+        e)
+          t="[*] "
+          ;;
+        d)
+          t="[-] "
+          ;;
+        n)
+          t=""
+          ;;
+      esac
+    done
+
+    shift $((OPTIND-1))
+
+    RED='\033[0;31m'
+    NC='\033[0m' # No Color
+
+    message="$(jt): $t$(jc): $1"
+
+    if [[ -z "$1" ]]; then
+        echo "${RED}ERROR: message is empty!${NC}"
+    else
+        gc -m "$message"
+    fi
+}
