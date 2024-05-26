@@ -39,6 +39,7 @@
 * Конфиги `tmux` (положить в `~`) - [здесь](./configs/tmux-config)
 * Конфиг `zsh`-а с oh-my-zsh (`~/.zshrc`) - [здесь](./configs/zsh-config/.zshrc)
 * Конфиг `alacritty` (`~/.config/alacritty/alacritty.toml`) - [здесь](./configs/alacritty-config/alacritty.toml)
+* Конфиг `wezterm` (`~/.wezterm.lua`) - [здесь](./configs/wezterm-config/.wezterm.lua)
 
 ## :pencil2: Разное
 
