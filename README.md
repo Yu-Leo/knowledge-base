@@ -20,6 +20,7 @@
 * Установка CLion на Manjaro Linux - [здесь](./linux/clion-manjaro/README.md)
 * Восстановление grub - [здесь](./linux/grub.md)
 * Настройка жестов тачпада - [здесь](./linux/gestures/README.md)
+* Как настроить пробуждение ноута от внешней клавиатуры при закрытой крышке - [здесь](./linux/usb-wakeup.md)
 
 ## :bookmark_tabs: Конспекты
 * Docker и Docker compose - [здесь](./docker/README.md)
