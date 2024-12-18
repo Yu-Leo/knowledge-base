@@ -26,21 +26,8 @@
 * Docker и Docker compose - [здесь](./docker/README.md)
 
 ## :wrench: Конфигурационные файлы
-* Конфиг **git**-a (`~/.gitconfig` или `~/.config/git/config`) - [здесь](./configs/git-config/.gitconfig)
-* Настройки **PyCharm**-a - [здесь](./configs/pycharm-config/README.md)
-* Базовый `.gitignore` для Python + PyCharm - [здесь](./gitignore-files/python_pycharm.gitignore)
-* Конфиг `vim`-a (`~/.vimrc`) - [здесь](./configs/vim-config/.vimrc)
-* Конфиги `bash`-a (`~/.bashrc`):
-  * Вариант № 1 - [здесь](./configs/bash-config/1.bashrc). Изначально создан в Linux Mint. **Из-за кастомизации `PS1` проявляется [ошибка с историей команд](https://www.linux.org.ru/forum/desktop/16257831)!**
-  * Вариант № 2 - [здесь](./configs/bash-config/2.bashrc). Ошибка с историей команд не наблюдалась
-* i3wm (i3-gaps)
-  * Дефолтный конфиг Manjaro i3 - [здесь](./configs/i3-config/default_manjaro_i3_config)
-* polybar
-  * Дефолтный конфиг - [здесь](./configs/polybar-config/default_config)
-* Конфиги `tmux` (положить в `~`) - [здесь](./configs/tmux-config)
-* Конфиг `zsh`-а с oh-my-zsh (`~/.zshrc`) - [здесь](./configs/zsh-config/.zshrc)
-* Конфиг `alacritty` (`~/.config/alacritty/alacritty.toml`) - [здесь](./configs/alacritty-config/alacritty.toml)
-* Конфиг `wezterm` (`~/.wezterm.lua`) - [здесь](./configs/wezterm-config/.wezterm.lua)
+
+В репозитории https://github.com/Yu-Leo/dotfiles
 
 ## :pencil2: Разное
 
@@ -55,7 +42,6 @@
 * Шпаргалка по алиасам плагина git для oh-my-zsh - [здесь](./git-tutorials/oh-my-zsh-git.md)
 
 ### Linux
-* Команды для компиляции / интерпретации и запуска программ из `vim` - [здесь](run_from_vim.md)
 * Мой формат даты и времени для трея (поставил в Manjaro Cinnamon): `%A | %d.%m.%y | %H:%M` (_Воскресенье | 03.04.22 | 21:30_)
 
 ## :link: Ссылки
