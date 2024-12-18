@@ -26,6 +26,7 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 Все настройки хранятся в `.obsidian/` в директории Vault-а.
 
 Мой шаблон - [здесь](./obsidian-vault-template).
+
 ### 2. Установка brew - [сайт](https://brew.sh/)
 
 ### 3. Wezterm
@@ -40,7 +41,7 @@ brew install --cask wezterm
 
 Настройки лежат в `~/.wezterm.lua`.
 
-Мой файл с настройками - [здесь](./configs/wezterm-config/.wezterm.lua)
+Мой файл с настройками - [здесь](https://github.com/Yu-Leo/dotfiles/blob/main/wezterm/.wezterm.lua)
 
 ### 4. zsh
 
@@ -59,22 +60,24 @@ brew install tmux
 
 #### 4.4. Настройка
 
-Настройки лежат в `~/.wezterm.lua`.
+Настройки лежат в `~`.
 
-Мой файл с настройками - [здесь](./configs/zsh-config/.zshrc)
+Мои файлы с настройками - [здесь](https://github.com/Yu-Leo/dotfiles/blob/main/zsh/.zshrc)
 
 ### 5. vim
 
-Устанавливаем и настраиваем по [туториалу](./configs/vim-config).
+Устанавливаем и настраиваем по [туториалу](https://github.com/Yu-Leo/dotfiles/blob/main/vim).
 
 ### 6. neovim
 
 TODO
+
 ### 7. GoLand
 
 #### 7.1. Установка
 
 Туториал по получению студенческой лицензии: https://github.com/nguendh/get-student-license
+
 #### 7.2. Настройка
 
 TODO
@@ -105,6 +108,8 @@ Host github.com
 Вместо `github.com` адрес нужного хостинга
 
 ### 3. Закидываем публичный ключ на хостинг
+
+Копируем в буффер обмена:
 
 ```shell
 cat ~/.ssh/personal_key.pub | pbcopy
