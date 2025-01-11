@@ -12,7 +12,6 @@
 * Туториал по деплою Django проекта на Heroku - [здесь](./django-heroku/README.md)
 
 ### Linux
-* Туториал по установке и настройке **vim** - [здесь](./configs/vim-config/README.md)
 * Добавление поддержки кирилических символов в tty - [здесь](./linux/cyrillic-in-tty.md)
 * Как отключить системный звук "Бип" (beep) - [здесь](./linux/beep.md)
 * Как отключить lightdm - [здесь](./linux/lightdm.md)

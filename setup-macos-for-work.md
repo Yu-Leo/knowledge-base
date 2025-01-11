@@ -2,6 +2,8 @@
 
 ## Настройки системы 
 
+Чтобы применилось, перезагрузить комп. [Источник](https://qna.habr.com/q/1072884)
+
 ### 1. Отключить подсказки спец. символов при удержании клавиш
 
 Если не сделать, эта штука не даст нормально скроллить при помощи j/k.
@@ -10,9 +12,20 @@
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
 
-Чтобы применилось, перезагрузить комп. [Источник](https://qna.habr.com/q/1072884)
+### 2. Увеличить скорость повтора символов при удержании
 
-### 2. Включить иммитацию удержания ЛКМ 3-мя пальцами на трекпаде
+```shell
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain KeyRepeat -int 1
+```
+
+### 3. Отображать скрытые файлы в Finder
+
+```shell
+defaults write com.apple.finder AppleShowAllFiles -bool true
+```
+
+### 4. Включить иммитацию удержания ЛКМ 3-мя пальцами на трекпаде
 
 ## Установка ПО
 
